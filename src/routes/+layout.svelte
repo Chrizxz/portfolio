@@ -93,7 +93,7 @@
 				</div>
 			</h1>
 			<div class="dropdown-content">
-				<a href="/about">About</a>
+				<a href="/about">About Me</a>
 				<a href="/contact">Contact</a>
 				<a class="icons" href="https://discord.gg/ZJ9PwQEC6E" rel="noopener noreferrer" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
 				<a class="icons" href="https://twitter.com/ChrizxzFTW" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
