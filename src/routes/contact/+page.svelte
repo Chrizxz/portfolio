@@ -2,8 +2,7 @@
   import '$css/global.css';
 </script>
 
-<h1>contact</h1>
-<nav>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-</nav>
+<div style="margin-top: 100vh;margin-bottom: 100vh;">
+  <h1>About</h1>
+  <h2>About Page</h2>
+</div>

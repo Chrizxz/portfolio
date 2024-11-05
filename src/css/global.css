@@ -1,10 +1,12 @@
+@import url(colors.css);
+
 body {
-  background-color: #000b20;
+  background-color: var(--bg);
   background-attachment: fixed;
   background-size: cover;
   font-family: 'source sans pro', sans-serif;
   font-style: normal;
-  color: #dadada;
+  color: var(--txt);
   line-height: 20px;
   margin: 0;
   position: relative;
@@ -57,12 +59,12 @@ p1 {
 }
 
 a {
-  color: #dadada;
+  color: var(--txt);
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: var(--txt);
 }
 
 .last {
@@ -75,29 +77,29 @@ min-height:100%;
 position:relative;
 }
 
-html {
-  --scrollbarBG: #121212;
-  --thumbBG: #cfcfcf;
-  scroll-behavior: smooth;
+/* @supports (scrollbar-width: thin) {
+  html {
+    scrollbar-color: var(--scrollThumb) var(--scrollBg);
+  }
+} */
+
+/* body::-webkit-scrollbar {
+  width: .6vw;
 }
-body::-webkit-scrollbar {
-  width: 11px;
-}
-body {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-}
+
 body::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
+  background: var(--scrollBg);
 }
+
 body::-webkit-scrollbar-thumb {
-  background-color: var(--thumbBG) ;
-  border-radius: 6px;
-  border: 3px solid var(--scrollbarBG);
+  background-color: var(--scrollThumb);
+  border-radius: .6vw;
+  border: .2vw solid var(--scrollBg);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #009afc; 
-}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollHover); 
+} */
 
 @media only screen and (max-width: 700px) {
   h1 {

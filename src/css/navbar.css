@@ -37,14 +37,6 @@ nav {
         transition: opacity .2s ease-in-out;
     }
 
-    .clickit:hover {
-        color: var(--textHover);
-    }
-
-    .clickit:active {
-        opacity: .85;
-    }
-
     .dropdown-content {
         display: none;
         text-align: center;
@@ -54,27 +46,15 @@ nav {
         width: 100vw !important;
         background: var(--modal); /* color */
         /* position: relative; */
-        box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);
+        box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);
     }
 
     .dropdown-content a {
         color: var(--subTxt);
-        font-family: 'Lato', sans-serif !important;
         font-weight: 400;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-    }
-
-    .dropdown-content a button {
-        background-color: transparent;
-        border: none;
-        color: var(--subTxt);
-        font-family: 'Lato', sans-serif !important;
-        font-size: 16px;
-        font-weight: 400;
-        width: 100%;
-        height: 2rem;
     }
 
     .dropdown-content a:nth-child(4) {
@@ -86,7 +66,6 @@ nav {
         padding: 1em 10px;
         transition: transform .3s ease-in-out;
         color: var(--subTxt);
-        opacity: 0.9;
     }
 
     .dropcheck {    
@@ -100,35 +79,39 @@ nav {
 
     .slide-down {
         display: block;
-        animation: slideDown2 .5s forwards;
+        animation: mobSlideDown .5s forwards, mobSlideDownShadow .5s forwards;
         transition: all .5s ease-in-out;
     }
     
     .slide-up {
         display: block;
-        animation: slideUp2 .5s forwards;
+        animation: mobSlideUp .5s forwards, mobSlideUpShadow .5s forwards;
         transition: all .5s ease-in-out;
     }
     
-    @keyframes slideDown2 {
+    @keyframes mobSlideDown {
         0% {transform: translateY(-100vh);}
         100% {transform: translateY(-.5vh);}
     }
+
+    @keyframes mobSlideDownShadow {
+        50% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);}
+        100% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);}
+    }
     
-    @keyframes slideUp2 {
+    @keyframes mobSlideUp {
         0% {transform: translateY(-.5vh);}
         100% {transform: translateY(-100vh);}
     }
 
-    .lunesImg {
-        width: 10% !important;
-        padding-left: 5%;
+    @keyframes mobSlideUpShadow {
+        0% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);}
+        30% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);}
     }
 
-    .navTxt {
-        font-size: 40%;
+    .lunesImg {
+        width: 30% !important;
         padding-left: 5%;
-        color: var(--text);
     }
 
     .mobileLogoWrap {
@@ -144,12 +127,12 @@ nav {
         align-items: baseline;
     }
 
-    nav ul {
+    /* nav ul {
         display: flex;
         align-items: center;
         background:none;
         justify-content: flex-end;
-    }
+    } */
     
     nav div:first-child h1 {
         line-height: 0;
@@ -158,8 +141,7 @@ nav {
         display: block !important;
     } 
 
-    nav div:first-child img { 
-        opacity: 0.9;
+    nav div:first-child img {
         height: auto;
     }
 
@@ -206,7 +188,7 @@ nav {
     .line {
         width: 20px;
         height: 3px;
-        background-color: var(--text);
+        background-color: var(--navTxt);
         margin: 2.5px 0;
         transition: 0.4s;
         border-radius: 1vw;
@@ -233,26 +215,14 @@ nav {
 .desLogo img {
     float: left;
     text-align: left;
-    width: 30px;
+    width: 100px;
     height: auto;
-    padding: 20px 5px;
-}
-
-.navTxt2 {
-    font-size: 20px;
-    color: var(--navTxt);
+    padding: 15px 5px;
+    padding-bottom: 32px !important;
 }
 
 .links {
-    padding-left: 25px !important;
-}
-
-.desLogoWrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    margin-right: 0 !important;
+    padding-left: 11px !important;
 }
 
 nav div:first-child h1 {
@@ -266,9 +236,10 @@ nav div:first-child h1 {
 }
 
 .separator {
-    color: var(--navSubTxt);
+    color: var(--navTxt);
     margin-left: .5rem;
     margin-right: .5rem;
+    margin-bottom: .2rem;
 }
 
 ul {
@@ -287,46 +258,40 @@ nav ul li {
     flex: 0 0 auto;
     display: flex;
     align-items: center;
-    font-family: 'Lato', sans-serif !important;
 }
 
 nav ul li span {
     font-weight: 200 !important;
-    opacity: .5;
+    opacity: .15;
 }
 
 nav ul li a {
     position: relative;
-    color: var(--navSubTxt);
+    color: var(--navTxt);
     text-decoration: none;
     margin: .8rem 1rem;
     display: block;
-    line-height: 1px;
+    line-height: 25px;
     font-weight: 400 !important;
 }
 
-nav ul li a:hover {
-    color: var(--navTxtHover);
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 0;
+    background-color: var(--navTxt);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.15s ease-in-out;
 }
 
-nav ul li button {
-    background-color: transparent;
-    border-radius: 100%;
-    padding: 0px;
-    border: none;
-    line-height: 1px;
-    cursor: pointer;
-    color: var(--navSubTxt);
-    font-size: 15px;
-    width: 1rem;
-    height: 1rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
-
-}
-
-nav ul li button:hover {
-    color: var(--navTxtHover);
+nav ul li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
 }
      
 #navbar, #nav {
@@ -348,28 +313,17 @@ nav ul li button:hover {
     /* backdrop-filter: blur(15px); */
 }
 
-.fixed .navTxt2 {
-    color: var(--text);
-}
-
-.fixed ul li a {
-    color: var(--subTxt);
-}
-
-.fixed ul li a:hover {
-    color: var(--textHover);
-}
-
-.fixed ul li button {
-    color: var(--subTxt) ;
-}
-
-.fixed ul li button:hover {
-    color: var(--textHover);
-}
-
 .fixed .separator {
-    color: var(--text);
+    color: var(--txt);
+}
+
+.fixed .desLogo img {
+    float: left;
+    text-align: left;
+    width: 100px;
+    height: auto;
+    padding: 15px 5px;
+    padding-bottom: 20px !important;
 }
 
 @keyframes slideDown {
