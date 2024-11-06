@@ -77,6 +77,10 @@ min-height:100%;
 position:relative;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* @supports (scrollbar-width: thin) {
   html {
     scrollbar-color: var(--scrollThumb) var(--scrollBg);
