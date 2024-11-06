@@ -188,7 +188,7 @@ nav {
     .line {
         width: 20px;
         height: 3px;
-        background-color: var(--navTxt);
+        background-color: var(--txt);
         margin: 2.5px 0;
         transition: 0.4s;
         border-radius: 1vw;
@@ -236,7 +236,7 @@ nav div:first-child h1 {
 }
 
 .separator {
-    color: var(--navTxt);
+    color: var(--txt);
     margin-left: .5rem;
     margin-right: .5rem;
     margin-bottom: .2rem;
@@ -267,7 +267,7 @@ nav ul li span { /* separator */
 
 nav ul li a {
     position: relative;
-    color: var(--navTxt);
+    color: var(--txt);
     text-decoration: none;
     margin: .8rem 1rem;
     display: block;
@@ -283,7 +283,7 @@ nav ul li a:before {
     border-radius: 10px;
     bottom: 0px;
     left: 0;
-    background-color: var(--navTxt);
+    background-color: var(--txt);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.15s ease-in-out;
