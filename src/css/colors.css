@@ -6,8 +6,11 @@
     --modal:#003392;
     --navTxt:#f2f7ff;
     --navTxtHover:#d9e7ff;
+    --glass: rgba(255, 255, 255, 0.15);
+    --glassHover: rgba(255, 255, 255, 0.3);
+    --glassBorder: rgba(255, 255, 255, 0.4);
 
-    
+
     --scrollThumb: #d9e7ff;
     --scrollHover: #f8fbff;
     --scrollBg: #002763;
