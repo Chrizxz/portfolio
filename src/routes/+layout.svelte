@@ -32,7 +32,7 @@
 		});
 
         const dropcheck = document.getElementById('dropcheck');
-        const dropdownContent = document.querySelector('.dropdown-content');
+        const dropdownContent = document.querySelector('.dropdownContent');
         const fries = document.querySelector('.fries');
 
         dropcheck.addEventListener('change', function() {
@@ -63,12 +63,9 @@
 			<input id="dropcheck" class="dropcheck" type="checkbox"/>
 			<h1>
 				<div class="dropbtnWrap">
-					<div class="mobileLogo">
-						<!-- svelte-ignore a11y_invalid_attribute -->
-						<a href="#" title="Logo" class="mobileLogoWrap">
-						<img class="logoImg" src="imgs/navWording.svg" alt="Logo"/>
+						<a href="/" title="Logo" class="mobileLogoWrap">
+							<img class="logoImg" src="imgs/navWording.svg" alt="Logo"/>
 						</a>
-					</div>
 					<label for="dropcheck" class="dropbtn2">
 						<!-- svelte-ignore a11y_missing_attribute -->
 						<a class="dropbtn clickit" title="Navigation Button" aria-label="Navigation Button">
@@ -81,7 +78,7 @@
 					</label>
 				</div>
 			</h1>
-			<div class="dropdown-content">
+			<div class="dropdownContent">
 				<a href="/about" title="About Me" aria-label="About Me">About Me</a>
 				<a href="/contact" title="Contact" aria-label="Contact">Contact</a>
 				<a href="https://beacons.ai/chrizxzftw" title="Other Links" rel="noopener noreferrer" target="_blank" aria-label="Other Links">Other Links</a>
