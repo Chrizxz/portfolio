@@ -22,7 +22,7 @@ h1 {
   font-family: 'baloo 2' ,cursive;
   font-size: 52px;
   font-style: normal;
-  color: white;
+  color: var(--txt);
   margin-top: 20px;
   text-align: center;
   margin-bottom: 20px;
@@ -32,7 +32,7 @@ h2 {
   font-family: 'baloo 2' ,cursive;
   font-size: 32px;
   font-style: normal;
-  color: white;
+  color: var(--txt2);
   margin-top: 20px;
   text-align: center;
   margin-bottom: 10px;
@@ -41,7 +41,7 @@ h2 {
 h3 {
   font-family: 'baloo 2' ,cursive;
   font-size: 22px;
-  color: #dadada;
+  color: var(--txt3);
   text-align: center;
   margin-top: 0;
   margin-right: 10%;
@@ -52,6 +52,7 @@ p1 {
   text-align: center;
   display: block;
   font-size: 18px;
+  color: var(--subTxt);
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 0em;
