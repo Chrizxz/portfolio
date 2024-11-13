@@ -8,6 +8,8 @@
 
 <svelte:window bind:scrollY={scroll} />
 
+<div class="filler"></div>
+
 <!-- Hero Section -->
 <section id="hero">
   <div class="heroWrap">
@@ -32,6 +34,8 @@
 <div class="img1"></div>
 
 <div class="wrapper">
-  <h1>Home</h1>
-  <h3>Home Page</h3>
+  <div class="miniWrapper">
+    <h1>Home</h1>
+    <h3>Home Page</h3>
+  </div>
 </div>
