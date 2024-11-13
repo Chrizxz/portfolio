@@ -1,0 +1,45 @@
+@import url(colors.css);
+
+.bttnWrap {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+.bttn {
+    text-align: center;
+    border-radius: 5rem;
+    border: .1rem solid;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 10rem;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.2s ease-out, transform 0.3s ease-out;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title Buttons */
+
+.titleBttnWrap
+
+.titleBttn {
+    border-color: var(--txt);
+    background-color: var(--glass);
+}
+
+.titleBttn:hover {
+    background-color: var(--glassHov);
+}

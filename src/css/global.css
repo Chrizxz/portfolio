@@ -4,8 +4,8 @@ body {
   background-color: var(--bg);
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'source sans pro', sans-serif;
-  font-style: normal;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
   color: var(--txt);
   line-height: 20px;
   margin: 0;
@@ -16,14 +16,14 @@ body {
 
 .container {
   min-height: 100vh;
-  max-width: 2600px;
-  margin: 0 auto;
+  /* max-width: 2600px;
+  margin: 0 auto; */
 }
 
 h1 {
-  font-family: 'baloo 2' ,cursive;
+  font-family: 'Baloo 2', serif;
   font-size: 52px;
-  font-style: normal;
+  font-weight: 700;
   color: var(--txt);
   margin-top: 20px;
   text-align: center;
@@ -31,9 +31,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'baloo 2' ,cursive;
+  font-family: 'Baloo 2', serif;
   font-size: 32px;
-  font-style: normal;
+  font-weight: 700;
   color: var(--txt2);
   margin-top: 20px;
   text-align: center;
@@ -41,8 +41,9 @@ h2 {
 }
 
 h3 {
-  font-family: 'baloo 2' ,cursive;
+  font-family: 'Baloo 2', serif;
   font-size: 22px;
+  font-weight: 700;
   color: var(--txt3);
   text-align: center;
   margin-top: 0;
