@@ -37,7 +37,7 @@
 }
 
 .logo {
-    background-image: url('imgs/chlogo.svg');
+    background-image: url('/imgs/chlogo.svg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
@@ -47,7 +47,7 @@
 }
 
 .img1 {
-    background-image: url('imgs/bgSea1.png');
+    background-image: url('/imgs/bgSea1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -61,7 +61,7 @@
 }
 
 .img2 {
-    background-image: url('imgs/bgSea2.png');
+    background-image: url('/imgs/bgSea2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -74,7 +74,7 @@
 }
 
 .img3 {
-    background-image: url('imgs/bgSea3.png');
+    background-image: url('/imgs/bgSea3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -87,7 +87,7 @@
 }
 
 .img4 {
-    background-image: url('imgs/bgSea4.png');
+    background-image: url('/imgs/bgSea4.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
