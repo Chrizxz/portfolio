@@ -46,6 +46,23 @@
                 fries.classList.remove('open');
             }
         });
+
+		const label = document.getElementById('dropdownLabel');
+        const links = document.querySelectorAll('.dropdownContent a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                label.click();
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.dropdown') && !event.target.closest('.dropbtn2') && dropcheck.checked) {
+                dropcheck.checked = false;
+                dropdownContent.classList.add('slide-up');
+                dropdownContent.classList.remove('slide-down');
+                fries.classList.remove('open');
+            }
+        });
     });
 
 	function backToTop() {
@@ -66,7 +83,7 @@
 						<a href="/" title="Logo" class="mobileLogoWrap">
 							<img class="logoImg" src="imgs/navWording.svg" alt="Logo"/>
 						</a>
-					<label for="dropcheck" class="dropbtn2">
+					<label id="dropdownLabel" for="dropcheck" class="dropbtn2">
 						<!-- svelte-ignore a11y_missing_attribute -->
 						<a class="dropbtn clickit" title="Navigation Button" aria-label="Navigation Button">
 							<div class="fries">

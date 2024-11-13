@@ -46,7 +46,7 @@ nav {
         width: 100vw !important;
         background: var(--modal); /* color */
         /* position: relative; */
-        box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);
+        box-shadow: 0 0 0rem 0rem rgba(0,0,0,0);
     }
 
     .dropdownContent a {
@@ -96,8 +96,8 @@ nav {
     }
 
     @keyframes mobSlideDownShadow {
-        55% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);}
-        100% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);}
+        55% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0);}
+        100% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0.5);}
     }
     
     @keyframes mobSlideUp {
@@ -106,8 +106,8 @@ nav {
     }
 
     @keyframes mobSlideUpShadow {
-        0% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0.5);}
-        23.5% {box-shadow: 0 0 0rem 30rem rgba(0,0,0,0);}
+        0% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0.5);}
+        23.5% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0);}
     }
 
     .logoImg {
