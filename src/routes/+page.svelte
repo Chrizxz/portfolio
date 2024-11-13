@@ -16,7 +16,7 @@
       <h1>Ello, I'm Chriz!</h1>
       <h3>a graphics designer and web developer</h3>
       <div class="bttnWrap titleBttnWrap">
-        <a href="/contact" class="bttn titleBttn" rel="noopener noreferrer" title="My Contacts" aria-label="My Contacts">My Contacts</a>
+        <a href="/contact" class="bttn titleBttn" rel="noopener noreferrer" title="Contacts" aria-label="Contacts">Contacts</a>
         <a href="/about" class="bttn titleBttn" rel="noopener noreferrer" title="About Me" aria-label="About Me">About Me</a>
       </div>
     </div>
@@ -33,5 +33,5 @@
 
 <div class="wrapper">
   <h1>Home</h1>
-  <h2>Home Page</h2>
+  <h3>Home Page</h3>
 </div>
