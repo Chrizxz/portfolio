@@ -63,9 +63,9 @@
 
 .img1 {
     background-image: url('/imgs/bgSea1.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     /* position: absolute; */
     z-index: 1;
     width: 100%;
