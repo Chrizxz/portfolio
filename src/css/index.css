@@ -359,3 +359,10 @@
         top: 30vh;
     }
 }
+
+@media only screen and (max-height: 600px) {
+    .img2, .img3, .img4 {
+        background-size: cover !important;
+        background-position: top !important;
+    }
+}
