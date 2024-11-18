@@ -82,6 +82,13 @@
     <section id="latest">
       <div class="latestWrap">
 
+        <div class="bubble bub1">
+          <div class="bubble"></div>
+        </div>
+        <div class="bubble bub2">
+          <div class="bubble"></div>
+        </div>
+
         <div class="latestSwiperMob">
             <div class="swiperMob">
               <div class="swiper-wrapper">

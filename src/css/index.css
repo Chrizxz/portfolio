@@ -212,11 +212,75 @@
     align-items: center;
     width: 100%;
     max-width: 2600px;
+    position: relative;
 }
 
 .space {
     height: 200px;
     width: 100%;
+}
+
+.bubble {
+    background-color: var(--bubble);
+    border-radius: 100%;
+}
+
+.bub1 {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 3rem;
+    right: 3vw;
+    animation: bub1Outer 8s ease-in-out infinite;
+}
+
+.bub1 div {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    top: 45%;
+    right: 65%;
+    position: absolute;
+    animation: bub1Inner 6s ease-in-out infinite alternate;
+}
+
+@keyframes bub1Outer {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 20px); }
+}
+
+@keyframes bub1Inner {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(10px, -10px); }
+}
+
+.bub2 {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 30rem;
+    left: 6vw;
+    animation: bub2Outer 10s ease-in-out infinite;
+}
+
+.bub2 div {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    bottom: 35%;
+    left: 55%;
+    position: absolute;
+    animation: bub2Inner 6s ease-in-out infinite alternate;
+}
+
+@keyframes bub2Outer {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(15px, -10px) scale(1.05); }
+}
+
+@keyframes bub2Inner {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(15px, -15px) scale(.9); }
 }
 
 .latestWrap {
@@ -247,7 +311,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 1;
 }
 
 .latestSwiperMob {
@@ -437,6 +500,10 @@
         flex-direction: column;
         width: 100%;
     }
+
+    .bubble {
+        opacity: .5;
+    }
     
     .latestSwiperMob {
         display: flex;
@@ -517,3 +584,15 @@
         background-position: top !important;
     }
 }
+
+/* 
+--swiper-pagination-color: var(--swiper-theme-color);
+--swiper-pagination-bullet-size: 8px;
+--swiper-pagination-bullet-width: 8px;
+--swiper-pagination-bullet-height: 8px;
+--swiper-pagination-bullet-inactive-color: #000;
+--swiper-pagination-bullet-inactive-opacity: 0.2;
+--swiper-pagination-bullet-opacity: 1;
+--swiper-pagination-bullet-horizontal-gap: 4px;
+--swiper-pagination-bullet-vertical-gap: 6px; 
+*/
