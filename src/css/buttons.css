@@ -31,9 +31,15 @@
     align-items: center;
 }
 
+.single {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* Title Buttons */
 
-.titleBttnWrap
+/* .titleBttnWrap */
 
 .titleBttn {
     border-color: var(--txt);
@@ -42,4 +48,19 @@
 
 .titleBttn:hover {
     background-color: var(--glassHov);
+}
+
+/* Normal Buttons */
+
+/* .normBttnWrap */
+
+.normBttn {
+    color: var(--bttnTxt);
+    border-color: var(--bttnTxt);
+    background-color: var(--glass2);
+}
+
+.normBttn:hover {
+    color: var(--bttnTxt);
+    background-color: var(--glassHov2);
 }

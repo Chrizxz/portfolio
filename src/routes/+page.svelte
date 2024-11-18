@@ -3,7 +3,48 @@
   import '$css/colors.css';
   import '$css/index.css';
   import '$css/buttons.css';
+  import Swiper from 'swiper/bundle';
+  import 'swiper/css/bundle';
   let scroll;
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    const swiperDes = new Swiper('.swiperDes', {
+      direction: 'vertical',
+      loop: true,
+      effect: "fade",
+    
+      pagination: {
+        el: '.swiperPageDes',
+        clickable: true,
+      },
+    
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      
+      mousewheel: true,
+    });
+
+    const swiperMob = new Swiper('.swiperMob', {
+      direction: 'horizontal',
+      loop: true,
+      effect: "fade",
+    
+      pagination: {
+        el: '.swiperPageMob',
+        clickable: true,
+      },
+    
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  });
+
 </script>
 
 <svelte:window bind:scrollY={scroll} />
@@ -35,7 +76,75 @@
 
 <div class="wrapper">
   <div class="miniWrapper">
-    <h1>Home</h1>
-    <h3>Home Page</h3>
+
+    <div class="space"></div>
+
+    <section id="latest">
+      <div class="latestWrap">
+
+        <div class="latestSwiperMob">
+            <div class="swiperMob">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide" 
+                    style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
+                  >
+                  <p1>Chriz's Banner (Blue)</p1>
+                  </div>
+                  <div class="swiper-slide" 
+                    style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
+                  >
+                  <p1>Chriz's Banner (Yellow)</p1>
+                  </div>
+                  <div class="swiper-slide" 
+                    style="background-image: url('/imgs/banners/chOrg_gradientRed.png')"
+                  >
+                  <p1>Chriz's Banner (Red)</p1>
+                  </div>
+                  <div class="swiper-slide" 
+                    style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')"
+                  >
+                  <p1>Chriz's Banner (Green)</p1>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiperPageMob"></div>
+        </div>
+
+        <span class="latestContent">
+          <h1>Latest Work</h1>
+          <p1>These are some of my most recent projects</p1>
+            <a href="/" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a>
+        </span>
+
+        <div class="latestSwiperDes">
+          <div class="swiper-pagination swiperPageDes"></div>
+          <div class="swiperDes">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" 
+              style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
+              >
+              <p1>Chriz's Banner (Blue)</p1>
+              </div>
+              <div class="swiper-slide" 
+                style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
+              >
+              <p1>Chriz's Banner (Yellow)</p1>
+              </div>
+              <div class="swiper-slide" 
+                style="background-image: url('/imgs/banners/chOrg_gradientRed.png')"
+              >
+              <p1>Chriz's Banner (Red)</p1>
+              </div>
+              <div class="swiper-slide" 
+                style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')"
+              >
+              <p1>Chriz's Banner (Green)</p1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </div>
 </div>

@@ -1,16 +1,21 @@
 /* Global Color Guide */
 
 :root {
-    --txt: #f2f7ff;
+    --txt: #f2f7ff; 
     --txt2: #d9e7ff;
     --txt3: #bfd8ff;
-    --subTxt:#a6c8ff;
+    --altColor:#80ccfd;
     --bg: #000b20;
     --bg2: #00409d;
     --modal:#003392;
+    
     --glass: rgba(255, 255, 255, 0.15);
     --glassHov: rgba(255, 255, 255, 0.3);
     --glassBord: rgba(255, 255, 255, 0.4);
+
+    --bttnTxt: #5999ff;
+    --glass2: #5999ff26;
+    --glassHov2: #5999ff4d;
 
 
     --scrollThumb: #d9e7ff;
