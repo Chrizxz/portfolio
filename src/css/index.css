@@ -311,6 +311,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .latestSwiperMob {
@@ -374,6 +375,27 @@
     .logo {
         width: 15rem;
         height: 15rem;
+    }
+
+    .latestWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .latestContent {
+        align-items: center;
+        text-align: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+
+    .swiperDes {
+        margin-right:0;
     }
 }
 
@@ -494,11 +516,7 @@
     }
 
     .latestWrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        width: 100%;
     }
 
     .bubble {
@@ -534,7 +552,7 @@
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-size: 16px;
-        transform: translateY(140%);
+        transform: translateY(130%);
     }
     
     .swiperPageMob.swiper-pagination {
@@ -558,11 +576,7 @@
     }
 
     .latestContent {
-        align-items: center;
-        text-align: center;
-        margin-right: 2rem;
-        margin-left: 2rem;
-        margin-bottom: 0;
+        margin-top: 0;
     }
 }
 

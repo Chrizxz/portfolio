@@ -44,7 +44,6 @@
       },
     });
   });
-
 </script>
 
 <svelte:window bind:scrollY={scroll} />
@@ -57,7 +56,7 @@
     <div class="heroContent" style:transform={`translateY(${scroll / 1.4}px)`}>
       <div class="logo"></div>
       <h1>Ello, I'm Chriz!</h1>
-      <h3>a graphics designer and web developer</h3>
+      <h3>a graphic designer and web developer</h3>
       <div class="bttnWrap titleBttnWrap">
         <a href="/contact" class="bttn titleBttn" rel="noopener noreferrer" title="Contacts" aria-label="Contacts">Contacts</a>
         <a href="/about" class="bttn titleBttn" rel="noopener noreferrer" title="About Me" aria-label="About Me">About Me</a>
@@ -120,7 +119,8 @@
         <span class="latestContent">
           <h1>Latest Work</h1>
           <p1>These are some of my most recent projects</p1>
-            <a href="/" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a>
+            <!-- svelte-ignore a11y_invalid_attribute -->
+            <a href="" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a>
         </span>
 
         <div class="latestSwiperDes">
