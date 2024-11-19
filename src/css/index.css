@@ -323,7 +323,8 @@
     max-width: 640px;
     aspect-ratio: 16/9;
     height: auto;
-    width: calc(100vh - 50px);
+    /* width: calc(100vh - 50px); */
+    width: 60rem;
     background-color: #fff;
     border-radius: 1rem;
     border: 4px solid var(--altColor);
@@ -546,6 +547,11 @@
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-size: 16px;
+        /* transform: translateY(100%); */
+    }
+
+    .swiper-slide {
+        padding-bottom: .5rem;
     }
     
     .swiperPageMob.swiper-pagination {
