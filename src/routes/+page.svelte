@@ -19,11 +19,11 @@
         clickable: true,
       },
     
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      //   pauseOnMouseEnter: true,
+      // },
       
       mousewheel: true,
     });
@@ -38,10 +38,10 @@
         clickable: true,
       },
     
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
     });
   });
 </script>
@@ -92,23 +92,23 @@
             <div class="swiperMob">
               <div class="swiper-wrapper">
                   <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
                   >
+                  <!-- style="background-image: url('/imgs/banners/chOrg_gradient2.png')" -->
                   <p1>Chriz's Banner (Blue)</p1>
                   </div>
                   <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
                   >
+                  <!-- style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')" -->
                   <p1>Chriz's Banner (Yellow)</p1>
                   </div>
                   <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradientRed.png')"
                   >
+                  <!-- style="background-image: url('/imgs/banners/chOrg_gradientRed.png')" -->
                   <p1>Chriz's Banner (Red)</p1>
                   </div>
                   <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')"
                   >
+                  <!-- style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')" -->
                   <p1>Chriz's Banner (Green)</p1>
                   </div>
               </div>

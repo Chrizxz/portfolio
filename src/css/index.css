@@ -203,6 +203,7 @@
     background-color: var(--bg2);
     width: 100%;
     z-index: 2;
+    overflow: hidden;
 }
 
 .miniWrapper {
@@ -345,7 +346,8 @@
     background-color: hsla(0, 0%, 0%, 0.3);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    transform: translateY(100%);
+    margin: 0;
+    /* transform: translateY(100%); */
 }
 
 .swiperPageDes.swiper-pagination {
@@ -540,19 +542,10 @@
         overflow: hidden;
     }
     
-    .swiperMob .swiper-slide {
-        display: flex !important;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        background-size: cover;
-    }
-    
     .swiper-slide p1 {
         padding-top: .5rem;
         padding-bottom: .5rem;
         font-size: 16px;
-        transform: translateY(130%);
     }
     
     .swiperPageMob.swiper-pagination {
