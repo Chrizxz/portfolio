@@ -542,7 +542,9 @@
     }
     
     .swiper-slide {
+        width: 80vw !important;
         height: 100% !important;
+        aspect-ratio: 16/9;
     }
     
     .swiper-slide p1 {
