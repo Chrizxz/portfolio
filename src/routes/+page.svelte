@@ -94,7 +94,7 @@
                   <div class="swiper-slide" 
                   style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
                   >
-                  <p1>Chriz's Banner (Blue)</p1>
+                  <p1>Chriz's Banner (Blue!)</p1>
                   </div>
                   <div class="swiper-slide" 
                   style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
