@@ -88,26 +88,28 @@
           <div class="bubble"></div>
         </div>
 
+        <h1 class="latestHeaderMob">Latest Works</h1>
+
         <div class="latestSwiperMob">
             <div class="swiperMob">
               <div class="swiper-wrapper">
                   <div class="swiper-slide" 
-                  style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
+                    style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
                   >
                   <p1>Chriz's Banner (Blue)</p1>
                   </div>
                   <div class="swiper-slide" 
-                  style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
+                    style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
                   >
                   <p1>Chriz's Banner (Yellow)</p1>
                   </div>
                   <div class="swiper-slide" 
-                  style="background-image: url('/imgs/banners/chOrg_gradientRed.png')"
+                    style="background-image: url('/imgs/banners/chOrg_gradientRed.png')"
                   >
                   <p1>Chriz's Banner (Red)</p1>
                   </div>
                   <div class="swiper-slide" 
-                  style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')"
+                    style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')"
                   >
                   <p1>Chriz's Banner (Green)</p1>
                   </div>
@@ -117,8 +119,8 @@
         </div>
 
         <span class="latestContent">
-          <h1>Latest Work</h1>
-          <p1>These are some of my most recent projects</p1>
+          <h1 class="latestHeaderDes">Latest Works</h1>
+          <p1>These are some of my most recent projects, varying from graphics, to code</p1>
             <!-- svelte-ignore a11y_invalid_attribute -->
             <a href="" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a>
         </span>
@@ -153,5 +155,8 @@
 
       </div>
     </section>
+
+    
+
   </div>
 </div>
