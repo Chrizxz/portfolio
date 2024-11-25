@@ -5,6 +5,7 @@
   import '$css/buttons.css';
   import Swiper from 'swiper/bundle';
   import 'swiper/css/bundle';
+  import Bubbles from '../lib/components/Bubbles.svelte';
   let scroll;
   import { onMount } from 'svelte';
 
@@ -81,11 +82,11 @@
     <section id="latest">
       <div class="latestWrap">
 
-        <div class="bubble bub1">
-          <div class="bubble"></div>
+        <div class="bubbleAmbient bub1">
+          <div class="bubbleAmbient"></div>
         </div>
-        <div class="bubble bub2">
-          <div class="bubble"></div>
+        <div class="bubbleAmbient bub2">
+          <div class="bubbleAmbient"></div>
         </div>
 
         <h1 class="latestHeaderMob">Latest Works</h1>
@@ -120,7 +121,7 @@
 
         <span class="latestContent">
           <h1 class="latestHeaderDes">Latest Works</h1>
-          <p1>These are some of my most recent projects, varying from graphics, to code</p1>
+          <p1>These are some of my most recent projects i've been working on.</p1>
             <!-- svelte-ignore a11y_invalid_attribute -->
             <a href="" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a>
         </span>
@@ -156,7 +157,17 @@
       </div>
     </section>
 
-    
+    <div class="space"></div>
+
+    <section id="projects">
+      <div class="projectsWrap">
+        <Bubbles/>
+        <div class="projectsContent">
+          <h1>More Projects!</h1>
+          <p1>I often work on a wide variety of graphic designs and websites for commissions and friends, but also tend to work on other things when I get the chance.</p1>
+        </div>
+      </div>
+    </section>
 
   </div>
 </div>

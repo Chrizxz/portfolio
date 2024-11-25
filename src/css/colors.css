@@ -19,7 +19,7 @@
     
     --modal:#003392;
     --altColor:#80ccfd;
-    --bubble: rgba(255, 255, 255, 0.2);
+    --bubbleAmbient: rgba(255, 255, 255, 0.2);
 
     --scrollThumb: #d9e7ff;
     --scrollHov: #f8fbff;
