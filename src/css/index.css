@@ -216,7 +216,7 @@
 }
 
 .space {
-    height: 200px;
+    height: 250px;
     width: 100%;
 }
 
@@ -225,12 +225,18 @@
     border-radius: 100%;
 }
 
+.latestWrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
 .bub1 {
     width: 10rem;
     height: 10rem;
     position: absolute;
-    top: 3rem;
-    right: 3vw;
+    top: -9rem;
+    right: -2vw;
     animation: bub1Outer 8s ease-in-out infinite;
 }
 
@@ -258,8 +264,8 @@
     width: 10rem;
     height: 10rem;
     position: absolute;
-    top: 30rem;
-    left: 6vw;
+    top: 20rem;
+    left: 0vw;
     animation: bub2Outer 10s ease-in-out infinite;
 }
 
@@ -281,11 +287,6 @@
 @keyframes bub2Inner {
     0%, 100% { transform: translate(0, 0) scale(1); }
     50% { transform: translate(15px, -15px) scale(.9); }
-}
-
-.latestWrap {
-    display: flex;
-    align-items: center;
 }
 
 .latestHeaderMob {
@@ -381,6 +382,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.bub3 {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: -1rem;
+    left: -4vw;
+    animation: bub3 6s ease-in-out infinite;
+}
+
+@keyframes bub3 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, 20px); }
+}
+
+.bub4 {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 20rem;
+    right: 0vw;
+    animation: bub4Outer 10s ease-in-out infinite;
+}
+
+.bub4 div {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    top: 0%;
+    left: -10%;
+    position: absolute;
+    animation: bub4Inner 6s ease-in-out infinite alternate;
+}
+
+@keyframes bub4Outer {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(15px, 10px) scale(.95); }
+}
+
+@keyframes bub4Inner {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(15px, 15px) scale(1.15); }
 }
 
 .projectsContent {
@@ -428,16 +473,39 @@
 .skill {
     width: 3rem;
     height: 3rem;
-    /* transform: rotate(-5deg); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.skill::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--glass);
+    color: var(--txt);
+    border: 1px solid var(--glassBord);
+    border-radius: 5rem;
+    backdrop-filter: blur(5px);
+    padding: .3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.skill:hover::after {
+    opacity: 1;
 }
 
 .skill:hover {
-    filter: brightness(0) invert(1);
-    transform: scale(1.05);
-    opacity: .8;
+    transform: scale(1.1);
 }
 
 .skillsWrap span:nth-child(1) .skill:nth-child(1) {

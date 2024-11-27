@@ -121,7 +121,7 @@
 
         <span class="latestContent">
           <h1 class="latestHeaderDes">Latest Works</h1>
-          <p1>These are some of my most recent projects i've been working on.</p1>
+          <p1>These are some of my most recent projects i've been working on :D</p1>
             <!-- svelte-ignore a11y_invalid_attribute -->
             <a href="" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a>
         </span>
@@ -162,10 +162,8 @@
     <section id="projects">
       <div class="projectsWrap">
 
-        <div class="bubbleAmbient bub1">
-          <div class="bubbleAmbient"></div>
-        </div>
-        <div class="bubbleAmbient bub2">
+        <div class="bubbleAmbient bub3"></div>
+        <div class="bubbleAmbient bub4">
           <div class="bubbleAmbient"></div>
         </div>
 
@@ -173,19 +171,18 @@
         <Bubbles/>
         <div class="projectsContent">
           <h1 class="projectsHeaderDes">More Projects!</h1>
-            <p1>I work on various graphic designs, websites, and other projects for commissions and friends, or just for fun. Click a bubble to learn more!</p1>
+            <p1>I work on various graphic designs, websites, and other projects for commissions and friends, or just for fun. Click a bubble to learn more ;)</p1>
           <h3>Some of my skills:</h3>
           <div class="skillsWrap">
-            <!-- photoshop, illustrator, html, css, javascript, nodejs -->
             <span>
-              <div class="skill"></div>
-              <div class="skill"></div>
-              <div class="skill"></div>
+              <div class="skill" data-tooltip="Photoshop"></div>
+              <div class="skill" data-tooltip="Illustrator"></div>
+              <div class="skill" data-tooltip="HTML"></div>
             </span>
             <span>
-              <div class="skill"></div>
-              <div class="skill"></div>
-              <div class="skill"></div>
+              <div class="skill" data-tooltip="CSS"></div>
+              <div class="skill" data-tooltip="JavaScript"></div>
+              <div class="skill" data-tooltip="Node.js"></div>
             </span>
           </div>
         </div>
