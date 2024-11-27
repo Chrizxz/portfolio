@@ -37,7 +37,6 @@
 }
 
 .heroContent h3 {
-    color: var(--txt) !important;
     margin:0;
 }
 
@@ -408,6 +407,68 @@
     max-width: 1000px;
 }
 
+.projectsContent h3 {
+    margin:0;
+    text-align: unset;
+}
+
+.projectsHeaderMob {
+    display: none;
+}
+
+.skillsWrap {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.skillsWrap span {
+    display: flex;
+}
+
+.skill {
+    width: 3rem;
+    height: 3rem;
+    /* transform: rotate(-5deg); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skill:hover {
+    filter: brightness(0) invert(1);
+    transform: scale(1.05);
+    opacity: .8;
+}
+
+.skillsWrap span:nth-child(1) .skill:nth-child(1) {
+    background-image: url("/imgs/skills/bubPS_blueStroke.svg");
+    margin-right: 1rem;
+}
+
+.skillsWrap span:nth-child(1) .skill:nth-child(2) {
+    background-image: url("/imgs/skills/bubAI_blueStroke.svg");
+    margin-right: 1rem;
+}
+
+.skillsWrap span:nth-child(1) .skill:nth-child(3) {
+    background-image: url("/imgs/skills/bubHTML_blueStroke.svg");
+    margin-right: 1rem;
+}
+
+.skillsWrap span:nth-child(2) .skill:nth-child(1) {
+    background-image: url("/imgs/skills/bubCSS_blueStroke.svg");
+    margin-right: 1rem;
+}
+
+.skillsWrap span:nth-child(2) .skill:nth-child(2) {
+    background-image: url("/imgs/skills/bubJS_blueStroke.svg");
+    margin-right: 1rem;
+}
+
+.skillsWrap span:nth-child(2) .skill:nth-child(3) {
+    background-image: url("/imgs/skills/bubNJS_blueStroke.svg");
+}
+
 
 /* Mobile Viewports */
 
@@ -638,6 +699,38 @@
     
     .projectsContent {
         margin-top: 1rem;
+    }
+
+    .projectsHeaderMob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .projectsHeaderDes {
+        display: none;
+    }
+
+    .skillsWrap {
+        flex-direction: column;
+    }
+
+    .skillsWrap span:nth-child(2) {
+        margin-top: 1rem;
+    }
+
+    .skillsWrap span:nth-child(1) .skill:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .skillsWrap span:nth-child(2) .skill:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .skill {
+        width: 4rem;
+        height: 4rem;
     }
 }
 

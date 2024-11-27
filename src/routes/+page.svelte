@@ -161,10 +161,33 @@
 
     <section id="projects">
       <div class="projectsWrap">
+
+        <div class="bubbleAmbient bub1">
+          <div class="bubbleAmbient"></div>
+        </div>
+        <div class="bubbleAmbient bub2">
+          <div class="bubbleAmbient"></div>
+        </div>
+
+        <h1 class="projectsHeaderMob">More Projects!</h1>
         <Bubbles/>
         <div class="projectsContent">
-          <h1>More Projects!</h1>
-          <p1>I often work on a wide variety of graphic designs and websites for commissions and friends, but also tend to work on other things when I get the chance.</p1>
+          <h1 class="projectsHeaderDes">More Projects!</h1>
+            <p1>I work on various graphic designs, websites, and other projects for commissions and friends, or just for fun. Click a bubble to learn more!</p1>
+          <h3>Some of my skills:</h3>
+          <div class="skillsWrap">
+            <!-- photoshop, illustrator, html, css, javascript, nodejs -->
+            <span>
+              <div class="skill"></div>
+              <div class="skill"></div>
+              <div class="skill"></div>
+            </span>
+            <span>
+              <div class="skill"></div>
+              <div class="skill"></div>
+              <div class="skill"></div>
+            </span>
+          </div>
         </div>
       </div>
     </section>
