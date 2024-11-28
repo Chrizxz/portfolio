@@ -106,16 +106,6 @@ onMount(() => {
 });
 
 </script>
-
-<div class="bubbleWrap">
-    <!-- <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="60" data-y="90" data-size="80"></div></a> -->
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="50" data-y="50" data-size="250"></div></a>
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="310" data-y="40" data-size="150"></div></a>
-    <!-- <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="0" data-y="190" data-size="150"></div></a> -->
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="60" data-y="310" data-size="80"></div></a>
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="170" data-y="310" data-size="150"></div></a>
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="300" data-y="210" data-size="125"></div></a>
-</div>
   
 <style>
 .bubbleWrap {
@@ -137,3 +127,13 @@ onMount(() => {
     }
 }
 </style>
+
+<div class="bubbleWrap">
+    <!-- <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="60" data-y="90" data-size="80"></div></a> -->
+    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="50" data-y="50" data-size="250"></div></a>
+    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="310" data-y="40" data-size="150"></div></a>
+    <!-- <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="0" data-y="190" data-size="150"></div></a> -->
+    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="60" data-y="310" data-size="80"></div></a>
+    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="170" data-y="310" data-size="150"></div></a>
+    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="300" data-y="210" data-size="125"></div></a>
+</div>
