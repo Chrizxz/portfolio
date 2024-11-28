@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.16 390.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008ced;
+      }
+    </style>
+  </defs>
+  <g id="squares">
+    <path class="cls-1" d="M50,0h240.16c55.19,0,100,44.81,100,100v190.16c0,55.19-44.81,100-100,100H100c-55.19,0-100-44.81-100-100V50C0,22.4,22.4,0,50,0Z"/>
+  </g>
+</svg>

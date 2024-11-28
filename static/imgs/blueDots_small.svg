@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 688 456">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0087ff;
+        opacity: .4;
+      }
+    </style>
+  </defs>
+  <g id="blueDots">
+    <g>
+      <circle class="cls-1" cx="199" cy="83" r="25"/>
+      <circle class="cls-1" cx="257" cy="83" r="25"/>
+      <circle class="cls-1" cx="315" cy="83" r="25"/>
+      <circle class="cls-1" cx="83" cy="83" r="25"/>
+      <circle class="cls-1" cx="141" cy="83" r="25"/>
+      <circle class="cls-1" cx="431" cy="83" r="25"/>
+      <circle class="cls-1" cx="489" cy="83" r="25"/>
+      <circle class="cls-1" cx="547" cy="83" r="25"/>
+      <circle class="cls-1" cx="605" cy="83" r="25"/>
+      <circle class="cls-1" cx="373" cy="83" r="25"/>
+      <circle class="cls-1" cx="199" cy="141" r="25"/>
+      <circle class="cls-1" cx="257" cy="141" r="25"/>
+      <circle class="cls-1" cx="315" cy="141" r="25"/>
+      <circle class="cls-1" cx="25" cy="141" r="25"/>
+      <circle class="cls-1" cx="83" cy="141" r="25"/>
+      <circle class="cls-1" cx="141" cy="141" r="25"/>
+      <circle class="cls-1" cx="431" cy="141" r="25"/>
+      <circle class="cls-1" cx="489" cy="141" r="25"/>
+      <circle class="cls-1" cx="547" cy="141" r="25"/>
+      <circle class="cls-1" cx="605" cy="141" r="25"/>
+      <circle class="cls-1" cx="663" cy="141" r="25"/>
+      <circle class="cls-1" cx="373" cy="141" r="25"/>
+      <circle class="cls-1" cx="199" cy="25" r="25"/>
+      <circle class="cls-1" cx="141" cy="25" r="25"/>
+      <circle class="cls-1" cx="257" cy="25" r="25"/>
+      <circle class="cls-1" cx="315" cy="25" r="25"/>
+      <circle class="cls-1" cx="431" cy="25" r="25"/>
+      <circle class="cls-1" cx="489" cy="25" r="25"/>
+      <circle class="cls-1" cx="547" cy="25" r="25"/>
+      <circle class="cls-1" cx="373" cy="25" r="25"/>
+      <circle class="cls-1" cx="199" cy="199" r="25"/>
+      <circle class="cls-1" cx="257" cy="199" r="25"/>
+      <circle class="cls-1" cx="315" cy="199" r="25"/>
+      <circle class="cls-1" cx="25" cy="199" r="25"/>
+      <circle class="cls-1" cx="83" cy="199" r="25"/>
+      <circle class="cls-1" cx="141" cy="199" r="25"/>
+      <circle class="cls-1" cx="431" cy="199" r="25"/>
+      <circle class="cls-1" cx="489" cy="199" r="25"/>
+      <circle class="cls-1" cx="547" cy="199" r="25"/>
+      <circle class="cls-1" cx="605" cy="199" r="25"/>
+      <circle class="cls-1" cx="663" cy="199" r="25"/>
+      <circle class="cls-1" cx="373" cy="199" r="25"/>
+      <circle class="cls-1" cx="199" cy="257" r="25"/>
+      <circle class="cls-1" cx="257" cy="257" r="25"/>
+      <circle class="cls-1" cx="315" cy="257" r="25"/>
+      <circle class="cls-1" cx="25" cy="257" r="25"/>
+      <circle class="cls-1" cx="83" cy="257" r="25"/>
+      <circle class="cls-1" cx="141" cy="257" r="25"/>
+      <circle class="cls-1" cx="431" cy="257" r="25"/>
+      <circle class="cls-1" cx="489" cy="257" r="25"/>
+      <circle class="cls-1" cx="547" cy="257" r="25"/>
+      <circle class="cls-1" cx="605" cy="257" r="25"/>
+      <circle class="cls-1" cx="663" cy="257" r="25"/>
+      <circle class="cls-1" cx="373" cy="257" r="25"/>
+      <circle class="cls-1" cx="199" cy="315" r="25"/>
+      <circle class="cls-1" cx="257" cy="315" r="25"/>
+      <circle class="cls-1" cx="315" cy="315" r="25"/>
+      <circle class="cls-1" cx="25" cy="315" r="25"/>
+      <circle class="cls-1" cx="83" cy="315" r="25"/>
+      <circle class="cls-1" cx="141" cy="315" r="25"/>
+      <circle class="cls-1" cx="431" cy="315" r="25"/>
+      <circle class="cls-1" cx="489" cy="315" r="25"/>
+      <circle class="cls-1" cx="547" cy="315" r="25"/>
+      <circle class="cls-1" cx="605" cy="315" r="25"/>
+      <circle class="cls-1" cx="663" cy="315" r="25"/>
+      <circle class="cls-1" cx="373" cy="315" r="25"/>
+      <circle class="cls-1" cx="199" cy="373" r="25"/>
+      <circle class="cls-1" cx="257" cy="373" r="25"/>
+      <circle class="cls-1" cx="315" cy="373" r="25"/>
+      <circle class="cls-1" cx="83" cy="373" r="25"/>
+      <circle class="cls-1" cx="141" cy="373" r="25"/>
+      <circle class="cls-1" cx="431" cy="373" r="25"/>
+      <circle class="cls-1" cx="489" cy="373" r="25"/>
+      <circle class="cls-1" cx="547" cy="373" r="25"/>
+      <circle class="cls-1" cx="605" cy="373" r="25"/>
+      <circle class="cls-1" cx="373" cy="373" r="25"/>
+      <circle class="cls-1" cx="199" cy="431" r="25"/>
+      <circle class="cls-1" cx="141" cy="431" r="25"/>
+      <circle class="cls-1" cx="257" cy="431" r="25"/>
+      <circle class="cls-1" cx="315" cy="431" r="25"/>
+      <circle class="cls-1" cx="431" cy="431" r="25"/>
+      <circle class="cls-1" cx="489" cy="431" r="25"/>
+      <circle class="cls-1" cx="547" cy="431" r="25"/>
+      <circle class="cls-1" cx="373" cy="431" r="25"/>
+    </g>
+  </g>
+</svg>
