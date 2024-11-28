@@ -642,6 +642,12 @@
     z-index: 3;
     position: absolute;
     font-size: 42px;
+    transition: .3s ease-in-out;
+}
+
+.connectContent a:hover h2 {
+    color: #fff;
+    transform: scale(1.03);
 }
 
 .connectSquare:nth-child(2) {
