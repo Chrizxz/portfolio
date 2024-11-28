@@ -223,6 +223,10 @@
 .bubbleAmbient {
     background-color: var(--bubbleAmbient);
     border-radius: 100%;
+    border: 1px solid var(--glassHov);
+    /* glass effect */
+    /* backdrop-filter: blur(15px);
+    box-shadow: inset 0 0 30px 5px var(--glass); */
 }
 
 .latestWrap {
@@ -489,7 +493,7 @@
     color: var(--txt);
     border: 1px solid var(--glassBord);
     border-radius: 5rem;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     padding: .3rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -564,7 +568,7 @@
     }
 
     .swiperDes {
-        margin-right:0;
+        margin-right: 0;
     }
 
     .projectsWrap {
