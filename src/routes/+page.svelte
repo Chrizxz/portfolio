@@ -121,7 +121,7 @@
 
         <span class="latestContent">
           <h1 class="latestHeaderDes">Latest Works</h1>
-          <p1>These are some of my most recent projects i've been working on :D</p1>
+          <p1>These are some of my most recent projects I've been working on!</p1>
             <!-- svelte-ignore a11y_invalid_attribute -->
             <a href="" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a>
         </span>
@@ -168,12 +168,19 @@
         </div>
 
         <h1 class="projectsHeaderMob">More Projects!</h1>
+
         <Bubbles/>
+        
         <div class="projectsContent">
           <h1 class="projectsHeaderDes">More Projects!</h1>
-            <p1>I work on various graphic designs, websites, and other projects for commissions and friends, or just for fun. Click a bubble to learn more ;)</p1>
-          <h3>Some of my skills:</h3>
+          <p1>I work on various graphic designs, websites, and other projects for commissions and friends, or just for fun. Click a bubble to learn more!</p1>
+          <h3 id="skills">Some of my skills:</h3>
           <div class="skillsWrap">
+
+            <div class="bubbleAmbient bubMob">
+              <div class="bubbleAmbient"></div>
+            </div>
+
             <span>
               <div class="skill" data-tooltip="Photoshop"></div>
               <div class="skill" data-tooltip="Illustrator"></div>
@@ -186,6 +193,32 @@
             </span>
           </div>
         </div>
+
+      </div>
+    </section>
+
+    <div class="space"></div>
+    
+    <section id="connect">
+      <div class="connectWrap">
+
+        <div class="bubbleAmbient bub5">
+          <div class="bubbleAmbient"></div>
+        </div>
+        <div class="bubbleAmbient bub6">
+          <div class="bubbleAmbient"></div>
+        </div>
+        
+        <h1 class="connectHeader">Let's get connected :D</h1>
+
+        <div class="connectContent">
+          <a href="/contact" aria-label="Connect" title="Connect">
+            <h2>Connect</h2>
+            <div class="connectSquare"></div>
+            <div class="connectSquare"></div>
+          </a>
+        </div>
+
       </div>
     </section>
 
