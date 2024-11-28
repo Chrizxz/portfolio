@@ -51,6 +51,12 @@
 
 <div class="filler"></div>
 
+<svelte:head>
+  <meta name="title" content="ChrizxzFTW">
+  <meta name="description" content="See all my creations, and latest work on this website!">
+  <meta name="keywords" content="chrizxzftw, chriz, art, chris, chrizxz, graphics, websites">
+</svelte:head>
+
 <!-- Hero Section -->
 <section id="hero">
   <div class="heroWrap">

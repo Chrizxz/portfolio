@@ -680,21 +680,21 @@
 
 @keyframes moveSquare1 {
     0% { transform: translate(-25%, -10%); }
-    100% { transform: translate(-30%, -15%); }
+    100% { transform: translate(-15%, -5%); }
 }
 
 @keyframes moveSquare1Reverse {
-    0% { transform: translate(-30%, -15%); }
+    0% { transform: translate(-15%, -5%); }
     100% { transform: translate(-25%, -10%); }
 }
 
 @keyframes moveSquare2 {
     0% { transform: translate(25%, 10%); }
-    100% { transform: translate(30%, 15%); }
+    100% { transform: translate(15%, 5%); }
 }
 
 @keyframes moveSquare2Reverse {
-    0% { transform: translate(30%, 15%); }
+    0% { transform: translate(15%, 5%); }
     100% { transform: translate(25%, 10%); }
 }
 
