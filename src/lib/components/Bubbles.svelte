@@ -116,6 +116,8 @@ onMount(() => {
 .bubble {
     position: absolute;
     background-color: #fff;
+    background-size: cover;
+    background-position: center;
     border-radius: 100%;
     transition: transform 0.3s ease, z-index 0.3s ease;
     border: 4px solid var(--altColor);
@@ -129,11 +131,9 @@ onMount(() => {
 </style>
 
 <div class="bubbleWrap">
-    <!-- <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="60" data-y="90" data-size="80"></div></a> -->
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="50" data-y="50" data-size="250"></div></a>
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="310" data-y="40" data-size="150"></div></a>
-    <!-- <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="0" data-y="190" data-size="150"></div></a> -->
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="60" data-y="310" data-size="80"></div></a>
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="170" data-y="310" data-size="150"></div></a>
-    <a href="/" style="background-image:;" aria-label="Bubble"><div class="bubble" data-x="300" data-y="210" data-size="125"></div></a>
+    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradient2.png');" class="bubble" data-x="50" data-y="50" data-size="250"></div></a>
+    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradientYellow.png');" class="bubble" data-x="310" data-y="40" data-size="150"></div></a>
+    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradientRed.png');" class="bubble" data-x="60" data-y="310" data-size="80"></div></a>
+    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradientGreen.png');" class="bubble" data-x="170" data-y="310" data-size="150"></div></a>
+    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradient2.png');" class="bubble" data-x="300" data-y="210" data-size="125"></div></a>
 </div>
