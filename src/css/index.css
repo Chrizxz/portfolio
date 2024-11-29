@@ -940,18 +940,14 @@
     }
 
     .availability {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top: 1rem;
         font-size: 12px;
         white-space: nowrap;
     }
     
     .status {
-        width: .5rem;
-        height: .5rem;
-        /* margin-right: .5rem; */
+        width: .3rem;
+        height: .3rem;
+        margin-right: .3rem;
     }
     
     .projectsContent {
