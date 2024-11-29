@@ -1,3 +1,5 @@
+<title>Contact | Chriz</title>
+
 <script>
   import '$css/global.css';
 </script>

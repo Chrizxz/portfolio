@@ -1,3 +1,5 @@
+<title>ChrizxzFTW</title>
+
 <script>
   import '$css/global.css';
   import '$css/colors.css';
