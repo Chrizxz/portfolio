@@ -131,7 +131,9 @@
           <h1 class="latestHeaderDes">Latest Works</h1>
           <p1>These are some of my most recent projects I've been working on!</p1>
             <div class="availability">
-              <span class="status idle"></span><b>Idle:</b>&nbsp;Busy, but still available!
+                <!-- <span class="status online"></span><b>Currently Open:&nbsp;</b> Ready to work on new projects! -->
+                <span class="status idle"></span><b>Currently Idle:&nbsp;</b> Busy, but available for new projects!
+                <!-- <span class="status dnd"></span><b>Currently Closed:&nbsp;</b> Not available for new projects! -->
             </div>
         </span>
 
