@@ -112,9 +112,9 @@ min-height:100%;
 position:relative;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 /* @supports (scrollbar-width: thin) {
   html {

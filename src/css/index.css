@@ -50,17 +50,6 @@
     transform: rotate(-7.5deg)
 }
 
-.titleBttnWrap
-
-.titleBttn {
-    border-color: var(--txt);
-    background-color: var(--glass);
-}
-
-.titleBttn:hover {
-    background-color: var(--glassHov);
-}
-
 .img1 {
     background-image: url('/imgs/bgSea1.png');
     background-size: cover;
@@ -197,7 +186,7 @@
     display: flex;
     justify-content: center;
     padding-top: 1px;
-    padding-bottom: 20vh;
+    /* padding-bottom: 20vh; */
     position: relative;
     background-color: var(--bg2);
     width: 100%;
@@ -773,11 +762,6 @@
         margin-bottom: 0;
         margin-top: 2rem;
     }
-
-    .projectsContent p1 {
-        width: 80vw;
-        margin-bottom: 250px;
-    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -791,11 +775,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    
-    .titleBttn {
-        margin-top: .5rem !important;
-        margin-bottom: .5rem !important;
     }
 
     .heroContent h3 {
@@ -973,6 +952,11 @@
 
     .projectsHeaderDes {
         display: none;
+    }
+    
+    .projectsContent p1 {
+        width: 80vw;
+        margin-bottom: 250px;
     }
 
     .bubMob {

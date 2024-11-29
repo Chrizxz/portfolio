@@ -85,7 +85,7 @@
 <div class="wrapper">
   <div class="miniWrapper">
 
-    <div class="space"></div>
+    <div class="space" id="status"></div>
 
     <section id="latest">
       <div class="latestWrap">
@@ -130,8 +130,6 @@
         <span class="latestContent">
           <h1 class="latestHeaderDes">Latest Works</h1>
           <p1>These are some of my most recent projects I've been working on!</p1>
-            <!-- svelte-ignore a11y_invalid_attribute -->
-            <!-- <a href="" class="bttn normBttn single" rel="noopener noreferrer" title="Button" aria-label="Button">Button</a> -->
             <div class="availability">
               <span class="status idle"></span><b>Idle:</b>&nbsp;Busy, but still available!
             </div>
