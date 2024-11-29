@@ -20,6 +20,12 @@
     --altColor:#80ccfd;
     --bubbleAmbient: rgba(255, 255, 255, 0.2);
 
+    --open: #01b700;
+    --busy: #e5b700;
+    --closed: #c90013;
+
+    --footer: #003179;
+
     --scrollThumb: #d9e7ff;
     --scrollHov: #f8fbff;
     --scrollBg: #002763;

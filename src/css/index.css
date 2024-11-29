@@ -317,6 +317,33 @@
     margin: 0;
 }
 
+.availability {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.status {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100%;
+    border: 4px solid var(--bubbleAmbient);
+    margin-right: .5rem;
+}
+
+.online {
+    background-color: var(--open);
+}
+
+.idle {
+    background-color: var(--busy);
+}
+
+.dnd {
+    background-color: var(--closed);
+}
+
 .latestSwiperDes {
     display: flex;
     justify-content: center;
