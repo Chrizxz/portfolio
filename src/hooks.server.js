@@ -17,6 +17,8 @@ export async function handle({ event, resolve }) {
         ["/pl2", "https://open.spotify.com/playlist/4Ob6cNM3147iFcIMDDtYnp?si=23890ac10d6744fc"],
         ["/playlist3", "https://open.spotify.com/playlist/6aqs0yCZr7MIBRmfP4wMF4?si=bb62661a876f44a4"],
         ["/pl3", "https://open.spotify.com/playlist/6aqs0yCZr7MIBRmfP4wMF4?si=bb62661a876f44a4"],
+        ["/playlist4", "https://open.spotify.com/playlist/0AJWs2wvPlKIN3pa3T2B2Q?si=25329ca16a8e41c3"],
+        ["/pl4", "https://open.spotify.com/playlist/0AJWs2wvPlKIN3pa3T2B2Q?si=25329ca16a8e41c3"],
         ["/steam", "https://steamcommunity.com/id/chrizftw/"],
         ["/minecraft", "https://namemc.com/chrizxz"],
         ["/spotify", "https://open.spotify.com/user/3lzvwkeppejdqmri51h330vza"],
