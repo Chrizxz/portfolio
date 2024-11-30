@@ -204,11 +204,6 @@
     position: relative;
 }
 
-.space {
-    height: 250px;
-    width: 100%;
-}
-
 .bubbleAmbient {
     background-color: var(--bubbleAmbient);
     border-radius: 100%;
