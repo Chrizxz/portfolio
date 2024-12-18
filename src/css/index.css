@@ -879,7 +879,8 @@
     }
 
     .bubbleAmbient {
-        opacity: .5;
+        /* opacity: .5; */
+        display: none;
     }
     
     .latestSwiperMob {
@@ -969,7 +970,7 @@
         margin-bottom: 250px;
     }
 
-    .bubMob {
+    /* .bubMob {
         display: block;
         width: 13rem;
         height: 13rem;
@@ -977,7 +978,7 @@
         top: 3rem;
         right: -1vw;
         animation: bubMobOuter 10s ease-in-out infinite;
-    }
+    } */
     
     .bubMob div {
         width: 9rem;
