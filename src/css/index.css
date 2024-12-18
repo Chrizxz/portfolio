@@ -879,8 +879,8 @@
     }
 
     .bubbleAmbient {
-        /* opacity: .5; */
-        display: none;
+        opacity: .5;
+        animation: none;
     }
     
     .latestSwiperMob {
@@ -970,15 +970,15 @@
         margin-bottom: 250px;
     }
 
-    /* .bubMob {
+    .bubMob {
         display: block;
         width: 13rem;
         height: 13rem;
         position: absolute;
         top: 3rem;
         right: -1vw;
-        animation: bubMobOuter 10s ease-in-out infinite;
-    } */
+        /* animation: bubMobOuter 10s ease-in-out infinite; */
+    }
     
     .bubMob div {
         width: 9rem;
@@ -987,7 +987,7 @@
         top: 35%;
         right: 55%;
         position: absolute;
-        animation: bubMobInner 6s ease-in-out infinite alternate;
+        /* animation: bubMobInner 6s ease-in-out infinite alternate; */
     }
     
     @keyframes bubMobOuter {
