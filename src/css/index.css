@@ -773,6 +773,10 @@
         align-items: center;
     }
 
+    .heroContent {
+        transform: translateY(0) !important; 
+    } 
+
     .heroContent h3 {
         margin-bottom: revert;
     }
