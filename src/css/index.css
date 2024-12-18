@@ -987,7 +987,7 @@
         top: 35%;
         right: 55%;
         position: absolute;
-        /* animation: bubMobInner 6s ease-in-out infinite alternate; */
+        animation: bubMobInner 6s ease-in-out infinite alternate;
     }
     
     @keyframes bubMobOuter {
