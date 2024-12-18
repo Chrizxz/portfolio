@@ -2,6 +2,8 @@
     import '$css/colors.css';
     import '$css/buttons.css';
     // import { onMount } from 'svelte';
+    let currentYear = new Date().getFullYear();
+    currentYear -= 2000;
 </script>
 
 <style>
@@ -77,7 +79,7 @@
         </div>
         <span class="footLine"></span>
         <div class="footContent">
-            <span>©2021-24 ChrizxzFTW. All rights reserved.</span>
+            <span>©2021-{currentYear} ChrizxzFTW. All rights reserved.</span>
         </div>
     </div>
 </footer>
