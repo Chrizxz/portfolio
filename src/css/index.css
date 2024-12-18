@@ -783,11 +783,10 @@
 
     .heroWrap {
         align-items: flex-end !important;
-        /* height: 60vh !important; */
     }
 
     .heroSea {
-        height: 90vh !important;
+        height: 80vh !important;
     }
 
     .img1 {
