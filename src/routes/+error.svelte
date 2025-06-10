@@ -12,8 +12,6 @@
     }
 
     div {
-        background: var(--bg2) !important;
-        box-shadow: 0px -5px 0px 10rem var(--bg2);
         padding-top: 20vh;
         padding-bottom: 15vh;
     }

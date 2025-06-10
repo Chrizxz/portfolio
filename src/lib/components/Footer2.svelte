@@ -7,13 +7,8 @@
 </script>
 
 <style>
-    footer {
-        background-color: var(--bg2);
-        box-shadow: 0px -5px 0px 5px var(--bg2);
-    }
-
     .coralReef {
-        background-image: url('/imgs/coralReef.svg');
+        background-image: url('/imgs/coralReef2.svg');
         height: 20rem;
         width: 100%;
         background-size: 100%;
@@ -25,8 +20,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--footer);
-        box-shadow: 0px 0px 0px 5px var(--footer);
+        background-color: var(--footer2);
+        box-shadow: 0px 0px 0px 5px var(--footer2);
         padding: 1.3rem 0;
         font-size: 12px;
     }

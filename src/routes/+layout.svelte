@@ -3,6 +3,7 @@
 	import BackToTopButton from '$lib/components/BackToTop.svelte';
 	import NavigationBar from '$lib/components/NavigationBar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Footer2 from '$lib/components/Footer2.svelte';
     export let data;
 	import '$css/global.css';
 	import '$lib/global.js';
@@ -22,4 +23,8 @@
 	</main>
 </div>
 
-<Footer/>
+{#if data.pathname === '/'}
+    <Footer/>
+{:else}
+    <Footer2/>
+{/if}
