@@ -17,7 +17,10 @@
     --glassHov2: #80ccfd4d;
     
     --modal:#003392;
+    --primColor: #36b2ff;
+    --primColor2: #36b2ff33;
     --altColor:#80ccfd;
+    --altColor2:#81ccfd33;
     --bubbleAmbient: rgba(255, 255, 255, 0.2);
 
     --open: #01b700;

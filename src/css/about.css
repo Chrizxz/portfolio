@@ -1,0 +1,286 @@
+@import url(colors.css);
+
+.headFiller {
+    height: 20vh;
+    text-align: center;
+    width: 20px;
+    display: block;
+}
+
+.aboutWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWrap > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2.5rem;
+}
+
+.aboutWrap > div > p1 {
+    max-width: 50rem;
+    text-align: left !important;
+    margin: 0;
+}
+
+/* .moreWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
+.moreWrap {
+    position: relative;
+    min-height: 300vh;
+    /* padding-bottom: 250px; */
+}
+
+.stickyContainer {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.logoBg {
+    width: 90rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .6;
+}
+
+.logoBg::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 30rem;
+    background: rgba(0, 165, 254, 0.5);
+    z-index: -1;
+    border-radius: 100%;
+    filter: blur(200px);
+}
+
+.logoBg img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Content styling */
+.contentContainer {
+    position: relative;
+    padding: 0 15%;
+    padding-bottom: 1px;
+    margin-top: -100vh;
+    /* Pull content up to overlay with sticky background */
+}
+
+/* Soap Like Bubble */
+
+.contentBlock {
+    padding: 2rem;
+    margin: 75vh 0;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px) saturate(190%);
+    /* border: 1px solid hsla(219, 92%, 70%, 0.8); */
+    border-radius: 20rem;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
+    inset 0 4px 20px rgba(38, 111, 246, 0.2);
+    transform: scale(1.5);
+    text-align: center;
+}
+
+.contentBlock:nth-child(4) {
+    margin-bottom: 40vh;
+}
+
+.contentBlock::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20rem;
+    box-shadow: inset -10px -8px 0px -11px rgb(0, 165, 254),
+    inset 0px -9px 0px -8px rgba(148, 182, 255, 0.4),
+    inset 12px 10px 0px -11px rgba(144, 100, 255, .6),
+    inset 0px 9px 0px -8px rgb(105, 100, 255);
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(3px) drop-shadow(10px 4px 6px black) brightness(115%);
+}
+
+.contentBlock p {
+    line-height: 1.6;
+}
+
+.contentBlock p,
+.contentBlock h2 {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.6));
+}
+
+.profWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+}
+
+.profContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.profContainer:nth-child(2) {
+    margin-left: -.1rem;
+}
+
+.diagProf {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    padding-left: 1rem;
+    border: .3rem solid var(--primColor);
+    background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px) saturate(180%);
+        border-radius: 20rem;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
+                    inset 0 4px 20px rgba(38, 111, 246, 0.2);
+    border-radius: 5rem;
+    transform: rotate(45deg);
+    margin: 0 -5rem;
+    width: 20rem;
+}
+
+/* .diagProf img {
+    width: 5rem;
+    height: auto;
+    transform: rotate(-45deg);
+} */
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    background-color: aqua;
+    border-radius: 100%;
+}
+
+.diagProf p1 {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1450px) {
+    .profWrap {
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    
+    .profContainer {
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contentBlock {
+        transform: scale(1.35);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logoBg {
+        width: 70%;
+    }
+    
+    .contentContainer {
+        padding: 0 5%;
+        margin-top: -30vh;
+        padding-bottom: 1px;
+    }
+    
+    .aboutWrap {
+        flex-direction: column-reverse;
+    }
+    
+    .contentBlock {
+        transform: scale(.9);
+        border-radius: 100%;
+        height: 100%;
+        margin: 30vh auto;
+        padding: 3rem;
+    }
+    
+    .contentBlock::after {
+        border-radius: 100%;
+    }
+
+    .logoBg::after {
+        width: 20rem;
+        height: 20rem;
+        background: rgba(0, 165, 254, 0.8); 
+    }
+
+    .contentBlock:nth-child(4) {
+        margin-bottom: 30vh;
+    }
+
+    #prof {
+        transform: translateY(-15vh);
+    }
+
+    .sp1 {
+        display: none;
+    }
+
+    .profContainer {
+        margin-top: 7.5rem;
+    }
+    
+    .profContainer:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .diagProf {
+        transform: scale(.7) rotate(55deg);
+        margin: 0 -7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .profContainer {
+        margin-top: 5rem;
+    }
+    
+    .diagProf {
+        transform: scale(.5) rotate(55deg);
+        margin: 0 -8.2rem;
+    }
+}
+
+    
