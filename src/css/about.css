@@ -1,7 +1,7 @@
 @import url(colors.css);
 
 .headFiller {
-    height: 20vh;
+    height: 15vh;
     text-align: center;
     width: 20px;
     display: block;
@@ -27,17 +27,9 @@
     margin: 0;
 }
 
-/* .moreWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-} */
-
 .moreWrap {
     position: relative;
     min-height: 300vh;
-    /* padding-bottom: 250px; */
 }
 
 .stickyContainer {
@@ -85,11 +77,10 @@
     position: relative;
     padding: 0 15%;
     padding-bottom: 1px;
-    margin-top: -100vh;
-    /* Pull content up to overlay with sticky background */
+    margin-top: -75vh;
 }
 
-/* Soap Like Bubble */
+/* Soap Like Bubbles */
 
 .contentBlock {
     padding: 2rem;
@@ -145,7 +136,6 @@
     justify-content: center;
     align-items: center;
     transform: scale(.8);
-    /* margin-left: 6rem; */
 }
 
 .profContainer {
