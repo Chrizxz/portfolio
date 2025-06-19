@@ -51,7 +51,7 @@
   }
 
   .card-layer-1 {
-    background: url('imgs/banners/chOrg_gradient2.png');
+    background: url('/imgs/banners/chOrg_gradient2.png');
     background-size: cover;
     background-position: center;
     transform: translateZ(calc(var(--layer-spacing) * 2 * 1rem));

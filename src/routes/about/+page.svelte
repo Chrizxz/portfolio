@@ -70,7 +70,7 @@
 </section>
 
 <section id="prof">
-  <h1>idek</h1>
+  <h1>Profiles</h1>
   <div class="profWrap">
     <div class="profContainer">
       <div class="diagProf">

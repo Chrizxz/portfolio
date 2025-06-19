@@ -52,7 +52,7 @@
 }
 
 .logoBg {
-    width: 90rem;
+    width: 80rem;
     height: auto;
     display: flex;
     justify-content: center;
@@ -144,7 +144,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 6rem;
+    transform: scale(.8);
+    /* margin-left: 6rem; */
 }
 
 .profContainer {
