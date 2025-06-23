@@ -5,8 +5,10 @@
   import '$css/colors.css';
   import '$css/buttons.css';
   import '$css/about.css';
-  import Profile from '$lib/components/Profile.svelte'
-  import CarouselSmall from '$lib/components/CarouselSmall.svelte'
+
+
+  import Profile from '$lib/components/Profile.svelte';
+  import CarouselSmall from '$lib/components/CarouselSmall.svelte';
   import { onMount } from 'svelte';
   let scroll2 = 0;
   let opacity = 0;
@@ -73,50 +75,57 @@
   <h1>Profiles</h1>
   <div class="profWrap">
     <div class="profContainer">
-      <div class="diagProf">
-        <!-- <img src="imgs/chlogo.svg" alt="logo"/> -->
-        <div class="circle"></div>
-        <p1>
-          idk bro
-        </p1>
-      </div>
-      <div class="diagProf">
-        <!-- <img src="imgs/chlogo.svg" alt="logo"/> -->
-        <div class="circle"></div>
-        <p1>
-          idk bro idk bro
-        </p1>
-      </div>
-      <div class="diagProf">
-        <!-- <img src="imgs/chlogo.svg" alt="logo"/> -->
-        <div class="circle"></div>
-        <p1>
-          idk bro idk bro
-        </p1>
-      </div>
+      <a href="../discord" class="diagLink">
+        <div class="diagProf">
+          <div class="circle" style:background-image={`url("/imgs/links/discord.svg")`}></div>
+          <p1>
+            Discord
+          </p1>
+        </div>
+      </a>
+      <a href="../twitter" class="diagLink">
+        <div class="diagProf">
+          <div class="circle" style:background-image={`url("/imgs/links/twitter.svg")`}></div>
+          <p1>
+            Twitter
+          </p1>
+        </div>
+      </a>
+      <a href="../youtube" class="diagLink">
+        <div class="diagProf">
+          <div class="circle" style:background-image={`url("/imgs/links/youtube.svg")`}></div>
+          <p1>
+            Youtube
+          </p1>
+        </div>
+      </a>
     </div>
     <div class="profContainer">
-      <div class="diagProf">
-        <!-- <img src="imgs/chlogo.svg" alt="logo"/> -->
-        <div class="circle"></div>
-        <p1>
-          idk bro idk bro
-        </p1>
-      </div>
-      <div class="diagProf">
-        <!-- <img src="imgs/chlogo.svg" alt="logo"/> -->
-        <div class="circle"></div>
-        <p1>
-          idk bro idk bro
-        </p1>
-      </div>
-      <div class="diagProf">
-        <!-- <img src="imgs/chlogo.svg" alt="logo"/> -->
-        <div class="circle"></div>
-        <p1>
-          idk bro idk bro
-        </p1>
-      </div>
+      <a href="../spotify" class="diagLink">
+        <div class="diagProf">
+          <div class="circle" style:background-image={`url("/imgs/links/spotify.svg")`}></div>
+          <p1>
+            Spotify
+          </p1>
+        </div>
+      </a>
+      <a href="../steam" class="diagLink">
+        <div class="diagProf">
+          <div class="circle" style:background-image={`url("/imgs/links/steam.svg")`}></div>
+          <p1>
+            Steam
+          </p1>
+        </div>
+      </a>
+      <a href="../reddit" class="diagLink">
+        <div class="diagProf">
+          <div class="circle" style:background-image={`url("/imgs/links/reddit.svg")`}></div>
+          <p1>
+            Reddit
+          </p1>
+        </div>
+      </a>
+      
     </div>
   </div>
 </section>

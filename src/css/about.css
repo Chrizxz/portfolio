@@ -72,15 +72,12 @@
     object-fit: contain;
 }
 
-/* Content styling */
 .contentContainer {
     position: relative;
     padding: 0 15%;
     padding-bottom: 1px;
     margin-top: -75vh;
 }
-
-/* Soap Like Bubbles */
 
 .contentBlock {
     padding: 2rem;
@@ -89,11 +86,9 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    
     position: relative;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px) saturate(190%);
-    /* border: 1px solid hsla(219, 92%, 70%, 0.8); */
     border-radius: 20rem;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
     inset 0 4px 20px rgba(38, 111, 246, 0.2);
@@ -154,8 +149,8 @@
     align-items: center;
     padding: 1rem 1.5rem;
     padding-left: 1rem;
-    border: .3rem solid var(--primColor);
-    background: rgba(255, 255, 255, 0.1);
+    border: .3rem solid var(--favColor);
+    /* background: rgba(255, 255, 255, 0.1); */
         backdrop-filter: blur(2px) saturate(180%);
         border-radius: 20rem;
         box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
@@ -164,19 +159,18 @@
     transform: rotate(45deg);
     margin: 0 -5rem;
     width: 20rem;
+    transition: margin 0.3s ease, padding 0.3s ease;
 }
-
-/* .diagProf img {
-    width: 5rem;
-    height: auto;
-    transform: rotate(-45deg);
-} */
 
 .circle {
     width: 5rem;
     height: 5rem;
-    background-color: aqua;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
     border-radius: 100%;
+    transition: transform 0.3s ease;
 }
 
 .diagProf p1 {
@@ -187,6 +181,29 @@
     font-size: 30px;
 }
 
+.diagLink:hover .diagProf p1 {
+    z-index: 5;
+    color: var(--primColor);
+    transition: color .4s ease;
+}
+
+.diagLink:hover .diagProf {
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    transition: 0.2s ease;
+}
+    
+.diagLink:hover .circle {
+    transform: scale(2.3) translate(3.2em, 0rem) rotate(-15deg);
+    transition: transform 0.3s ease;
+}
+
+/* .diagLink {
+    border: 1px solid red
+} */
+    
 @media only screen and (max-width: 1450px) {
     .profWrap {
         flex-direction: column;
@@ -194,6 +211,10 @@
     }
     
     .profContainer {
+        margin-top: 10rem;
+    }
+    
+    .profContainer:nth-child(2) {
         margin-top: 15rem;
     }
 }
@@ -211,7 +232,7 @@
     
     .contentContainer {
         padding: 0 5%;
-        margin-top: -30vh;
+        margin-top: -45vh;
         padding-bottom: 1px;
     }
     
@@ -255,16 +276,25 @@
     
     .profContainer:nth-child(2) {
         margin-left: 0;
+        margin-top: 7.5rem;
     }
     
     .diagProf {
         transform: scale(.7) rotate(55deg);
         margin: 0 -7rem;
     }
+
+    .circle {
+        transform: rotate(-55deg);
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .profContainer {
+        margin-top: 3rem;
+    }
+    
+    .profContainer:nth-child(2) {
         margin-top: 5rem;
     }
     
@@ -274,4 +304,3 @@
     }
 }
 
-    
