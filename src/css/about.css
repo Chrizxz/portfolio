@@ -200,6 +200,10 @@
     transition: transform 0.3s ease;
 }
 
+#prof {
+    margin-bottom: -13rem;
+}
+
 /* .diagLink {
     border: 1px solid red
 } */
@@ -264,6 +268,7 @@
 
     #prof {
         transform: translateY(-15vh);
+        margin-bottom: -6rem;
     }
 
     .sp1 {
