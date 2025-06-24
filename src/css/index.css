@@ -716,6 +716,12 @@
     100% { transform: translate(25%, 10%); }
 }
 
+@media screen and (min-width: 3000px) {
+    .img1 {
+        padding-bottom: 200px;
+    }
+}
+
 
 /* Mobile Viewports */
 

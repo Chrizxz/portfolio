@@ -5,8 +5,6 @@
   import '$css/colors.css';
   import '$css/buttons.css';
   import '$css/about.css';
-
-
   import Profile from '$lib/components/Profile.svelte';
   import CarouselSmall from '$lib/components/CarouselSmall.svelte';
   import { onMount } from 'svelte';
@@ -24,7 +22,7 @@
 
 <div class="headFiller"></div>
 
-<section id="about">
+<section id="aboutme">
   <div class="aboutWrap">
     <div>
       <h2>ChrizxzFTW</h2>
@@ -71,7 +69,7 @@
   </div>
 </section>
 
-<section id="prof">
+<section id="profiles">
   <h1>Profiles</h1>
   <div class="profWrap">
     <div class="profContainer">
@@ -95,7 +93,7 @@
         <div class="diagProf">
           <div class="circle" style:background-image={`url("/imgs/links/youtube.svg")`}></div>
           <p1>
-            Youtube
+            YouTube
           </p1>
         </div>
       </a>

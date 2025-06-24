@@ -183,7 +183,7 @@
 
 .diagLink:hover .diagProf p1 {
     z-index: 5;
-    color: var(--primColor);
+    color: rgba(0, 0, 0, 0);
     transition: color .4s ease;
 }
 
@@ -200,13 +200,9 @@
     transition: transform 0.3s ease;
 }
 
-#prof {
+#profiles {
     margin-bottom: -13rem;
 }
-
-/* .diagLink {
-    border: 1px solid red
-} */
     
 @media only screen and (max-width: 1450px) {
     .profWrap {
