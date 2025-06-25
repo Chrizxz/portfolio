@@ -83,9 +83,9 @@
       </a>
       <a href="../twitter" class="diagLink">
         <div class="diagProf">
-          <div class="circle" style:background-image={`url("/imgs/links/twitter.svg")`}></div>
+          <div class="circle" style:background-image={`url("/imgs/links/xtwitter.svg")`}></div>
           <p1>
-            Twitter
+            X
           </p1>
         </div>
       </a>

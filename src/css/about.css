@@ -179,6 +179,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 30px;
+    width: 6rem;
 }
 
 .diagLink:hover .diagProf p1 {
@@ -262,9 +263,8 @@
         margin-bottom: 30vh;
     }
 
-    #prof {
-        transform: translateY(-15vh);
-        margin-bottom: -6rem;
+    #profiles {
+        margin-bottom: 2rem;
     }
 
     .sp1 {

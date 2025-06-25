@@ -76,7 +76,7 @@
         <div class="dropdownContent">
             <a href="/about" title="About Me" aria-label="About Me">About Me</a>
             <a href="/contact" title="Contact" aria-label="Contact">Contact</a>
-            <a href="/links" title="Other Links" rel="noopener noreferrer" target="_blank" aria-label="Other Links">Other Links</a>
+            <a href="/links" title="Other Links" rel="noopener noreferrer" target="_blank" aria-label="Other Links">Other Links <i class="fas fa-external-link-alt"></i></a>
             <a class="icons" href="/discord" title="Discord" rel="noopener noreferrer" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
             <a class="icons" href="/twitter" title="Twitter" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
             <a class="icons" href="/github" title="Github" rel="noopener noreferrer" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
@@ -91,7 +91,7 @@
             <div>
                 <li><a href="/about" title="About Me" aria-label="About Me">About Me</a></li>
                 <li><a href="/contact" title="Contact" aria-label="Contact">Contact</a></li>
-                <li><a href="/links" title="Other Links" rel="noopener noreferrer" target="_blank" aria-label="Other Links">Other Links</a></li>
+                <li><a href="/links" title="Other Links" rel="noopener noreferrer" target="_blank" aria-label="Other Links">Other Links <i class="fas fa-external-link-alt"></i></a></li>
                 <li><span class="separator" style="user-select: none;">|</span></li>
                 <li><a href="/discord" title="Discord" rel="noopener noreferrer" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a></li>
                 <li><a href="/twitter" title="Twitter" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i ></a></li>

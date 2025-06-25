@@ -57,6 +57,12 @@ nav {
         display: block;
     }
 
+    .dropdownContent a:nth-child(3) i {
+        color: var(--txt3);
+        font-size: .7rem;
+        transform: translateY(-.12rem);
+    }
+
     .dropdownContent a:nth-child(4) {
         padding: 6px 16px;
     }
@@ -96,8 +102,8 @@ nav {
     }
 
     @keyframes mobSlideDownShadow {
-        55% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0);}
-        100% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0.5);}
+        55% {box-shadow: 0 0 0rem 50rem rgba(0,0,0,0);}
+        100% {box-shadow: 0 0 0rem 50rem rgba(0,0,0,0.5);}
     }
     
     @keyframes mobSlideUp {
@@ -106,8 +112,8 @@ nav {
     }
 
     @keyframes mobSlideUpShadow {
-        0% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0.5);}
-        23.5% {box-shadow: 0 0 0rem 40rem rgba(0,0,0,0);}
+        0% {box-shadow: 0 0 0rem 50rem rgba(0,0,0,0.5);}
+        23.5% {box-shadow: 0 0 0rem 50rem rgba(0,0,0,0);}
     }
 
     .logoImg {
@@ -282,6 +288,12 @@ nav ul li a:before {
 nav ul li a:hover:before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+nav ul li:nth-child(3) a i {
+    color: var(--txt3);
+    font-size: .7rem;
+    transform: translateY(-.1rem);
 }
      
 #navbar, #nav {
