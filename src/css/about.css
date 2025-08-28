@@ -19,12 +19,19 @@
     align-items: flex-start;
     justify-content: center;
     margin: 2.5rem;
+    max-width: 36rem;
+}
+
+.aboutWrap > span {
+    height: 1rem;
+    width: 10rem;
 }
 
 .aboutWrap > div > p1 {
     max-width: 50rem;
     text-align: left !important;
     margin: 0;
+    /* font-size: 1.4rem; */
 }
 
 .moreWrap {

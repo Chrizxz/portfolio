@@ -68,8 +68,8 @@
       <h1>Ello, I'm Chriz!</h1>
       <h3>a graphic designer and web developer</h3>
       <div class="bttnWrap titleBttnWrap">
-        <a href="/contact" class="bttn titleBttn" rel="noopener noreferrer" title="Contacts" aria-label="Contacts">Contacts</a>
-        <a href="/about" class="bttn titleBttn" rel="noopener noreferrer" title="About Me" aria-label="About Me">About Me</a>
+        <a href="/contact" class="bttn titleBttn" rel="noopener noreferrer" title="Contact Me" aria-label="Contact Me">Get In Touch</a>
+        <a href="/about" class="bttn titleBttn" rel="noopener noreferrer" title="About Me" aria-label="About Me">Who Am I?</a>
       </div>
     </div>
   </div>
@@ -131,11 +131,11 @@
         <span class="latestContent">
           <h1 class="latestHeaderDes">Latest Works</h1>
           <p1>These are some of my most recent projects I've been working on!</p1>
-            <div class="availability">
-                <!-- <span class="status online"></span><b>Currently Open:&nbsp;</b> Ready to work on new projects! -->
-                <span class="status idle"></span><b>Currently Idle:&nbsp;</b> Busy, but available for new projects!
-                <!-- <span class="status dnd"></span><b>Currently Closed:&nbsp;</b> Not available for new projects! -->
-            </div>
+          <div class="availability">
+              <!-- <span class="status online"></span><b>Currently Open:&nbsp;</b> Ready to work on new projects! -->
+              <span class="status idle"></span><b>Currently Idle:&nbsp;</b> Busy, but available for new projects!
+              <!-- <span class="status dnd"></span><b>Currently Closed:&nbsp;</b> Not available for new projects! -->
+          </div>
         </span>
 
         <div class="latestSwiperDes">

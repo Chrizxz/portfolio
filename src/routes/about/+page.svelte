@@ -33,6 +33,7 @@
       </p1>
       <CarouselSmall/>
     </div>
+    <span></span>
     <Profile/>
   </div>
 </section>
@@ -58,7 +59,7 @@
   
       <div class="contentBlock">
         <h2>Work Experience</h2>
-        <p>Throughout my career, I've collaborated with diverse clients, from startups to established companies. Each project has enriched my skills and broadened my perspective on effective design solutions.</p>
+        <p>Throughout my career, I've worked for diverse sets of clients. Each project has enriched my skills and broadened my perspective on effective design and code solutions.</p>
       </div>
   
       <div class="contentBlock">

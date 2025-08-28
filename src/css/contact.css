@@ -1,0 +1,131 @@
+@import url(colors.css);
+
+.circleBg {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 50rem;
+    height: 50rem;
+    background: radial-gradient(circle, rgba(56, 175, 255, 0.12) 0%, rgba(56, 175, 255, 0) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.contactBgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: -6rem;
+    position: absolute;
+    filter: drop-shadow(0 0 8px rgba(56, 175, 255, 1));
+}
+
+.contactBgWords {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.bgText {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+    align-items: center;
+    text-align: center;
+    font-size: 15vw;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(255, 255, 255, 0.1);
+    user-select: none;
+}
+
+.waveLetter {
+    display: inline-block;
+    animation: wave 10s infinite alternate ease-in-out;
+    color: var(--favColor);
+    opacity: .1;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(7rem); }
+}
+
+.contactParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.contactWrap {
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    /* position: relative; */
+    width: 75%;
+}
+
+@define-mixin modalBg {
+    background-color: rgba(0, 0, 0, .45);
+    border-radius: 3.5rem;
+    border: 1px solid var(--glass);
+    backdrop-filter: blur(5px);
+}
+
+.contactImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    padding: 3rem 1rem;
+    @mixin modalBg;
+}
+
+.contactImg img {
+    width: 100%;
+    height: auto;
+}
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5rem;
+    gap: 2rem;
+}
+
+.contactModal {
+    padding: 2rem;
+    @mixin modalBg;
+}
+
+.contactModal p1 {
+    margin: 0;
+    text-align: left;
+}
+
+.contactModal:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.contactModal:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    flex: 3;
+    gap: 2rem;
+}
+
+
+

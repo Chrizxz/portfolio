@@ -37,12 +37,12 @@
   
     .techCarouselContainer::before {
         left: 0;
-        background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+        background: linear-gradient(to right, #000b20 0%, #000b2000 100%);
     }
 
     .techCarouselContainer::after {
         right: 0;
-        background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+        background: linear-gradient(to left, #000b20 0%, #000b2000 100%);
     }
 
     .techCarousel {
@@ -64,10 +64,10 @@
         border-radius: 1.5rem;
         border: .1rem solid var(--primColor);
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(2px) saturate(180%);
         border-radius: 20rem;
-        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
-                    inset 0 4px 20px rgba(38, 111, 246, 0.2);
+        /* box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
+                    inset 0 4px 20px rgba(38, 111, 246, 0.2); */
+        /* box-shadow: inset 0 4px 20px rgba(38, 111, 246, 0.5); */
         white-space: nowrap;
     }
   
