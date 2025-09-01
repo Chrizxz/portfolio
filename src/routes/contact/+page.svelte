@@ -12,7 +12,9 @@
   <h2>Contact Page</h2>
 </div> -->
 
-<section>
+<div class="econtactHeadFiller"></div>
+
+<section id="contactSection">
 
   <span class="circleBg"></span>
   <div class="contactBgWrap">
@@ -50,8 +52,8 @@
         <img src="/imgs/chOrg_3d.png" alt="Contact Me!" />
       </div>
       <div class="contactMe">
-        <div class="contactModal">
-          <h1 style:text-align={'left'}>Contact Me</h1>
+        <div class="contactModal">  
+          <h1 style="text-align: left;margin-top: 1rem;white-space: nowrap;">Contact Me</h1>
           <p1>
             If you have any questions, feedback, or just want to say hi, feel free to reach out!
           </p1>

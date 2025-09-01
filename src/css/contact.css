@@ -2,6 +2,7 @@
 
 .circleBg {
     position: absolute;
+    display: block;
     top: 30%;
     left: 50%;
     width: 50rem;
@@ -68,8 +69,6 @@
 .contactWrap {
     display: flex;
     justify-content: center;
-    /* align-items: stretch; */
-    /* position: relative; */
     width: 75%;
 }
 
@@ -98,7 +97,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 5rem;
+    margin-left: 2rem;
     gap: 2rem;
 }
 
@@ -127,5 +126,45 @@
     gap: 2rem;
 }
 
+@media screen and (max-width: 768px) {    
+    .contactHeadFiller {
+        height: 15vh;
+        text-align: center;
+        width: 20px;
+        display: block;
+    }
 
+    .contactBgWrap {
+        display: none;
+    }
+
+    .circleBg {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .contactParent {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .contactWrap {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .contactImg {
+        width: auto;
+    }
+
+    .contactMe {
+        margin-left: 0;
+    }
+
+    .contactMe {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
 

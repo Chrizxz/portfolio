@@ -108,4 +108,25 @@
         margin-bottom: 1rem;
         font-size: 4rem;
     }
+
+    @media (max-width: 1030px) {
+        .emSpot {
+            height: 14rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .emSpotTxt {
+            font-size: 1rem;
+        }
+
+        .emSpotTxt i {
+            font-size: 2.5rem;
+        }
+
+        .emSpot {
+            width: 8rem;
+            height: 16rem;
+        }
+    }
 </style>
