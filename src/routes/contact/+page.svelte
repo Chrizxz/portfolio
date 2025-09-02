@@ -12,7 +12,7 @@
   <h2>Contact Page</h2>
 </div> -->
 
-<div class="econtactHeadFiller"></div>
+<div class="contactHeadFiller"></div>
 
 <section id="contactSection">
 
