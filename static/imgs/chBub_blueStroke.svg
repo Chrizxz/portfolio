@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 819.21 715.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #80ccfd;
+      }
+
+      .cls-2 {
+        opacity: .15;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #80ccfd;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_24" data-name="Layer 24">
+    <g class="cls-2">
+      <circle class="cls-1" cx="292.51" cy="526" r="164.92"/>
+      <circle class="cls-1" cx="309.28" cy="222.26" r="219.75"/>
+      <ellipse class="cls-1" cx="573.21" cy="678.13" rx="33.06" ry="34.61" transform="translate(-48.77 44.44) rotate(-4.26)"/>
+      <ellipse class="cls-1" cx="61.9" cy="398.8" rx="59.38" ry="62.16" transform="translate(-29.44 5.7) rotate(-4.26)"/>
+      <ellipse class="cls-1" cx="471.85" cy="614.47" rx="65.24" ry="68.29" transform="translate(-44.33 36.74) rotate(-4.26)"/>
+      <circle class="cls-1" cx="573.21" cy="118.96" r="44.17"/>
+      <circle class="cls-1" cx="611" cy="411" r="205.7"/>
+    </g>
+    <g>
+      <circle class="cls-3" cx="292.51" cy="526" r="164.92"/>
+      <circle class="cls-3" cx="309.28" cy="222.26" r="219.75"/>
+      <ellipse class="cls-3" cx="573.21" cy="678.13" rx="33.06" ry="34.61" transform="translate(-48.77 44.44) rotate(-4.26)"/>
+      <ellipse class="cls-3" cx="61.9" cy="398.8" rx="59.38" ry="62.16" transform="translate(-29.44 5.7) rotate(-4.26)"/>
+      <ellipse class="cls-3" cx="471.85" cy="614.47" rx="65.24" ry="68.29" transform="translate(-44.33 36.74) rotate(-4.26)"/>
+      <circle class="cls-3" cx="573.21" cy="118.96" r="44.17"/>
+      <circle class="cls-3" cx="611" cy="411" r="205.7"/>
+    </g>
+  </g>
+</svg>

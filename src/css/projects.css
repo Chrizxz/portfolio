@@ -1,0 +1,144 @@
+@import url(colors.css);
+
+.title {
+    font-size: 15vw;
+    line-height: 14rem;
+    width: 100%;
+    font-family: poppins, sans-serif;
+    color: var(--bg);
+    position: relative;
+    text-shadow: 0px 0px 100px var(--primColor);
+    opacity: 0.60;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    user-select: none;
+    z-index: -3;
+}
+
+.title::before {
+    content: "PROJECTS";
+    position: absolute;
+    filter: url(#dissolve);
+    z-index: -1;
+}
+
+.gallerySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    height: 164px;
+    width: 100%;
+}
+
+.sectionHeader div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sectionHeader h2 {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    line-height: 4rem;
+    text-align: left;
+    max-width: 28rem;
+    padding-left: 1.5rem;
+}
+
+.sectionHeader p1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    text-align: right;
+    max-width: 20rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 200 !important;
+    padding-right: 1.5rem;
+}
+
+.secBubble {
+    background: url("/imgs/chBub_blueStroke.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    filter: contrast(20%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 1200px) {
+    .secBubble {
+        width: 98%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .title {
+        font-size: 15vw !important;
+        opacity: 1;
+        line-height: 20rem;
+        margin-bottom: -4rem;
+        margin-top: 3rem;
+        transform: translateY(0) !important;
+        text-shadow: 0px 0px 60px var(--primColor);
+    }
+
+    .sectionHeader {
+        flex-direction: column;
+    }
+    
+    .sectionHeader div:first-child {
+        padding: 0;
+        justify-content: space-around !important;
+        flex-direction: column;
+        /* width: 90%; */
+    }
+
+    .sectionHeader h2 {
+        font-size: 3rem !important;
+        line-height: 2.6rem;
+        text-align: center;
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        padding: 0;
+    }
+
+    .sectionHeader p1 {
+        font-size: 1.1rem !important;
+        line-height: 1.3rem;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+
+    .secBubble {
+        height: 160px;
+        width: 180px;
+        opacity: 0.7;
+    }
+
+}
