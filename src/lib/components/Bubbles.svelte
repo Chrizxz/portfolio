@@ -98,11 +98,20 @@ const setupBubbleInteractions = () => {
     });
 };
 
+const handleBubbleClick = (tag) => {
+    window.location.href = `/projects#logoFilter=${tag}`;
+
+};
+
 onMount(() => {
     updateBubbleProperties();
     setupBubbleInteractions();
 
     window.addEventListener("resize", updateBubbleProperties);
+
+    return () => {
+        window.removeEventListener("resize", updateBubbleProperties);
+    };
 });
 
 </script>
@@ -121,6 +130,7 @@ onMount(() => {
     border-radius: 100%;
     transition: transform 0.3s ease, z-index 0.3s ease;
     border: 4px solid var(--altColor);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
@@ -131,9 +141,59 @@ onMount(() => {
 </style>
 
 <div class="bubbleWrap">
-    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradient2.png');" class="bubble" data-x="50" data-y="50" data-size="250"></div></a>
-    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradientYellow.png');" class="bubble" data-x="310" data-y="40" data-size="150"></div></a>
-    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradientRed.png');" class="bubble" data-x="60" data-y="310" data-size="80"></div></a>
-    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradientGreen.png');" class="bubble" data-x="170" data-y="310" data-size="150"></div></a>
-    <a href="/" aria-label="Bubble"><div style="background-image: url('/imgs/banners/chOrg_gradient2.png');" class="bubble" data-x="300" data-y="210" data-size="125"></div></a>
+    <button 
+        type="button"
+        aria-label="Filter by branding"
+        title="Branding projects"
+        on:click={() => handleBubbleClick('branding')}
+        class="bubble"
+        data-x="50"
+        data-y="50"
+        data-size="250"
+        style="background-image: url('/imgs/banners/chOrg_gradient2.png');"
+    />
+    <button 
+        type="button"
+        aria-label="Filter by logo"
+        title="Logo projects"
+        on:click={() => handleBubbleClick('logo')}
+        class="bubble"
+        data-x="310"
+        data-y="40"
+        data-size="150"
+        style="background-image: url('/imgs/banners/chOrg_gradientYellow.png');"
+    />
+    <button 
+        type="button"
+        aria-label="Filter by design"
+        title="Design projects"
+        on:click={() => handleBubbleClick('design')}
+        class="bubble"
+        data-x="60"
+        data-y="310"
+        data-size="80"
+        style="background-image: url('/imgs/banners/chOrg_gradientRed.png');"
+    />
+    <button 
+        type="button"
+        aria-label="Filter by banner"
+        title="Banner projects"
+        on:click={() => handleBubbleClick('banner')}
+        class="bubble"
+        data-x="170"
+        data-y="310"
+        data-size="150"
+        style="background-image: url('/imgs/banners/chOrg_gradientGreen.png');"
+    />
+    <button 
+        type="button"
+        aria-label="Filter by modern"
+        title="Modern projects"
+        on:click={() => handleBubbleClick('modern')}
+        class="bubble"
+        data-x="300"
+        data-y="210"
+        data-size="125"
+        style="background-image: url('/imgs/banners/chOrg_gradient2.png');"
+    />
 </div>
