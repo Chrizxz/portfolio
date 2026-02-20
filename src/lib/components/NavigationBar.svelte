@@ -74,6 +74,7 @@
             </div>
         </h1>
         <div class="dropdownContent">
+            <a href="/projects" title="Projects" aria-label="Projects">Projects</a>
             <a href="/about" title="About Me" aria-label="About Me">About Me</a>
             <a href="/contact" title="Contact" aria-label="Contact">Contact</a>
             <a href="/links" title="Other Links" rel="noopener noreferrer" target="_blank" aria-label="Other Links">Other Links <i class="fas fa-external-link-alt"></i></a>
@@ -89,6 +90,7 @@
                 <img src="imgs/navWording.svg" alt="Logo"/>
             </a>
             <div>
+                <li><a href="/projects" title="Projects" aria-label="Projects">Projects</a></li>
                 <li><a href="/about" title="About Me" aria-label="About Me">About Me</a></li>
                 <li><a href="/contact" title="Contact" aria-label="Contact">Contact</a></li>
                 <li><a href="/links" title="Other Links" rel="noopener noreferrer" target="_blank" aria-label="Other Links">Other Links <i class="fas fa-external-link-alt"></i></a></li>

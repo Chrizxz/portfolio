@@ -290,7 +290,7 @@ nav ul li a:hover:before {
     transform: scaleX(1);
 }
 
-nav ul li:nth-child(3) a i {
+[aria-label="Other Links"] i {
     color: var(--txt3);
     font-size: .7rem;
     transform: translateY(-.1rem);
