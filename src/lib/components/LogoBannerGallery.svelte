@@ -48,11 +48,32 @@
             alt: 'Minimalist Logo Set',
             title: 'Minimalist Logo Set',
             tags: ['branding', 'logo', 'minimal', 'set']
+        },
+        {
+            id: 7,
+            src: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop',
+            alt: 'Vintage Design Style',
+            title: 'Vintage Design Style',
+            tags: ['banner', 'design', 'vintage']
+        },
+        {
+            id: 8,
+            src: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=600&fit=crop',
+            alt: 'Modern Tech Branding',
+            title: 'Modern Tech Branding',
+            tags: ['branding', 'tech', 'modern']
+        },
+        {
+            id: 9,
+            src: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=600&fit=crop',
+            alt: 'Elegant Logo Design',
+            title: 'Elegant Logo Design',
+            tags: ['logo', 'minimal', 'elegant']
         }
     ];
 
     let selectedItem = null;
-    let mounted = false;
+    let scrollContainer;
 
     // Extract unique tags from gallery items
     $: uniqueTags = [...new Set(galleryItems.flatMap(item => item.tags))].sort();
@@ -63,8 +84,6 @@
         : galleryItems;
 
     onMount(() => {
-        mounted = true;
-
         const handleKeydown = (e) => {
             if (e.key === 'Escape' && selectedItem) {
                 closeModal();
@@ -91,6 +110,16 @@
     function handleBackdropClick(e) {
         if (e.target === e.currentTarget) {
             closeModal();
+        }
+    }
+
+    function scrollGallery(direction) {
+        if (scrollContainer) {
+            const scrollAmount = 320; // card width + gap
+            scrollContainer.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
         }
     }
 </script>
@@ -124,34 +153,51 @@
             <p>No items found with the tag "<strong>{selectedFilter}</strong>"</p>
         </div>
     {:else}
-        <div class="galleryGrid">
-            {#each filteredItems as item (item.id)}
-                <div 
-                    class="galleryItem" 
-                    on:click={() => openModal(item)}
-                    on:keydown={(e) => e.key === 'Enter' && openModal(item)}
-                    role="button"
-                    tabindex="0"
-                >
-                <div class="itemImageWrapper">
-                    <img src={item.src} alt={item.alt} loading="lazy" />
-                    <div class="itemOverlay">
-                        <div class="overlayContent">
-                            <h3>{item.title}</h3>
-                            <div class="tagsList">
-                                {#each item.tags as tag}
-                                    <span class="tag">{tag}</span>
-                                {/each}
+        <div class="galleryWrapper">
+            {#if filteredItems.length > 3}
+                <button class="scrollBtn scrollBtn-left" on:click={() => scrollGallery('left')} aria-label="Scroll left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+            {/if}
+            
+            <div class="galleryScroll" bind:this={scrollContainer}>
+                <div class="galleryGrid">
+                    {#each filteredItems as item (item.id)}
+                        <div 
+                            class="galleryItem" 
+                            on:click={() => openModal(item)}
+                            on:keydown={(e) => e.key === 'Enter' && openModal(item)}
+                            role="button"
+                            tabindex="0"
+                        >
+                        <div class="itemImageWrapper">
+                            <img src={item.src} alt={item.alt} loading="lazy" />
+                            <div class="itemOverlay">
+                                <div class="overlayContent">
+                                    <h3>{item.title}</h3>
+                                    <div class="tagsList">
+                                        {#each item.tags as tag}
+                                            <span class="tag">{tag}</span>
+                                        {/each}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                {/each}
                 </div>
             </div>
-        {/each}
-    </div>
-{/if}
+
+            {#if filteredItems.length > 3}
+                <button class="scrollBtn scrollBtn-right" on:click={() => scrollGallery('right')} aria-label="Scroll right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            {/if}
+        </div>
+    {/if}
 
     {#if selectedItem}
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
         <div 
             class="modalBackdrop" 
             on:click={handleBackdropClick}
@@ -174,9 +220,7 @@
             </div>
         </div>
     {/if}
-</div>
-
-<style>
+</div><style>
     .logoBannerGalleryContainer {
         width: 96%;
         max-width: 1200px;
@@ -242,11 +286,33 @@
         border-color: var(--txt2);
     }
 
+    .galleryWrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .galleryScroll {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex: 1;
+    }
+
+    .galleryScroll::-webkit-scrollbar {
+        display: none;
+    }
+
     .galleryGrid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-auto-flow: column;
+        grid-template-rows: 1fr;
         gap: 2rem;
-        width: 100%;
+        padding: 0.5rem 0;
+        width: fit-content;
     }
 
     .noResults {
@@ -277,11 +343,13 @@
         cursor: pointer;
         border-radius: 1.5rem;
         overflow: hidden;
-        aspect-ratio: 1;
         background: var(--glass);
         border: 1px solid var(--glassBord);
         transition: all 0.3s ease;
         position: relative;
+        flex-shrink: 0;
+        width: 280px;
+        height: 280px;
     }
 
     .galleryItem:hover {
@@ -341,6 +409,39 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
+    }
+
+    .scrollBtn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid var(--glassBord);
+        color: var(--txt);
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        z-index: 10;
+        backdrop-filter: blur(5px);
+        flex-shrink: 0;
+    }
+
+    .scrollBtn:hover {
+        background: var(--glassHov);
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    .scrollBtn-left {
+        left: 0;
+    }
+
+    .scrollBtn-right {
+        right: 0;
     }
 
     .tag {
@@ -456,11 +557,16 @@
         .logoBannerGalleryContainer {
             max-width: 98%;
         }
-        
-        .galleryGrid {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-            /* padding: 0 0.5rem; */
+
+        .galleryItem {
+            width: 240px;
+            height: 240px;
+        }
+
+        .scrollBtn {
+            width: 2.2rem;
+            height: 2.2rem;
+            font-size: 0.9rem;
         }
 
         .modalContent {
@@ -485,9 +591,13 @@
         .logoBannerGalleryContainer {
             max-width: 90%;
         }
-        
+
+        .galleryItem {
+            width: 200px;
+            height: 200px;
+        }
+
         .galleryGrid {
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 1rem;
         }
 
@@ -503,6 +613,12 @@
         .tag {
             padding: 0.25rem 0.5rem;
             font-size: 0.65rem;
+        }
+
+        .scrollBtn {
+            width: 2rem;
+            height: 2rem;
+            font-size: 0.8rem;
         }
 
         .modalBackdrop {
