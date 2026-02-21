@@ -103,6 +103,10 @@ const handleBubbleClick = (tag) => {
 
 };
 
+const handleBubbleClick2 = (tag) => {
+    window.location.href = `/projects#websiteFilter=${tag}`;
+};
+
 onMount(() => {
     updateBubbleProperties();
     setupBubbleInteractions();
@@ -150,7 +154,7 @@ onMount(() => {
         data-x="50"
         data-y="50"
         data-size="250"
-        style="background-image: url('/imgs/banners/chOrg_gradient2.png');"
+        style="background-image: url('/imgs/logos/wavifyLight.png');"
     />
     <button 
         type="button"
@@ -161,39 +165,39 @@ onMount(() => {
         data-x="310"
         data-y="40"
         data-size="150"
-        style="background-image: url('/imgs/banners/chOrg_gradientYellow.png');"
+        style="background-image: url('/imgs/logos/sys8_blue.png');"
     />
     <button 
         type="button"
         aria-label="Filter by design"
         title="Design projects"
-        on:click={() => handleBubbleClick('design')}
+        on:click={() => handleBubbleClick('abstract')}
         class="bubble"
         data-x="60"
         data-y="310"
         data-size="80"
-        style="background-image: url('/imgs/banners/chOrg_gradientRed.png');"
+        style="background-image: url('/imgs/logos/stellapen2.png');"
     />
     <button 
         type="button"
         aria-label="Filter by banner"
         title="Banner projects"
-        on:click={() => handleBubbleClick('banner')}
+        on:click={() => handleBubbleClick2('gaming')}
         class="bubble"
         data-x="170"
         data-y="310"
         data-size="150"
-        style="background-image: url('/imgs/banners/chOrg_gradientGreen.png');"
+        style="background-image: url('/imgs/logos/lunesLogo.png');"
     />
     <button 
         type="button"
         aria-label="Filter by modern"
         title="Modern projects"
-        on:click={() => handleBubbleClick('modern')}
+        on:click={() => handleBubbleClick('illustrative')}
         class="bubble"
         data-x="300"
         data-y="210"
         data-size="125"
-        style="background-image: url('/imgs/banners/chOrg_gradient2.png');"
+        style="background-image: url('/imgs/illustrative/wordlerLogo.png');"
     />
 </div>

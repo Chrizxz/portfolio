@@ -26,7 +26,7 @@
             description: 'Reliable game hosting at an affordable cost',
             image: 'imgs/sites/lunes.host.png',
             url: 'https://lunes.host',
-            tags: ['business', 'site', 'static'],
+            tags: ['gaming', 'site', 'static'],
             customTags: []
         },
         {
@@ -41,7 +41,7 @@
         {
             id: 3,
             title: 'Atnip Construction',
-            description: 'Building high-quality homes with superior craftsmanship.',
+            description: 'Building high-quality homes with superior craftsmanship',
             image: 'imgs/sites/atnipconstruction.com.png',
             url: 'https://atnip.vercel.app/',
             tags: ['business', 'site', 'static'],

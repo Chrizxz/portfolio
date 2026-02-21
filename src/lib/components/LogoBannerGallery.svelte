@@ -36,7 +36,7 @@
             src: 'imgs/banners/localVineRetail.png',
             alt: 'Local Vine Retail Design',
             title: 'Local Vine Retail Design',
-            tags: ['branding', 'banner', 'combination']
+            tags: ['branding', 'banner', 'combination', 'pictorial']
         },
         {
             id: 3,
@@ -57,7 +57,7 @@
             src: 'imgs/banners/managerMonopoly_redone_Banner.png',
             alt: 'Manager Monopoly Server Banner',
             title: 'Manager Monopoly Server Banner',
-            tags: ['gaming', 'banner', 'combination']
+            tags: ['gaming', 'banner', 'combination', 'emblem']
         },
         {
             id: 6,
@@ -163,6 +163,41 @@
             alt: 'Yousif User Logo',
             title: 'Yousif User Logo',
             tags: ['branding', 'logo', 'illustrative', 'pictorial']
+        },
+        {
+            id: 21,
+            src: 'imgs/logos/abztrakt.png',
+            alt: 'Abztrakt Logo',
+            title: 'Abztrakt Logo',
+            tags: ['other', 'logo', 'combination', 'abstract']
+        },
+        {
+            id: 22,
+            src: 'imgs/logos/tromboneLogo.png',
+            alt: 'Trombone Logo',
+            title: 'Trombone Logo',
+            tags: ['gaming', 'logo', 'emblem']
+        },
+        {
+            id: 23,
+            src: 'imgs/logos/srnyxCode.png',
+            alt: 'Srnyx Code Logo',
+            title: 'Srnyx Code Logo',
+            tags: ['other', 'logo', 'lettermark']
+        },
+        {
+            id: 24,
+            src: 'imgs/logos/yokaiLogo2.png',
+            alt: 'Yokai User Logo',
+            title: 'Yokai User Logo',
+            tags: ['gaming', 'logo', 'emblem']
+        },
+        {
+            id: 25,
+            src: 'imgs/banners/bapBannerYT2.png',
+            alt: 'Bapplause YouTube Banner',
+            title: 'Bapplause YouTube Banner',
+            tags: ['gaming', 'banner', 'wordmark']
         }
     ];
 
