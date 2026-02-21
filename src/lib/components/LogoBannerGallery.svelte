@@ -4,71 +4,165 @@
     export let selectedFilter = null;
     export let setLogoFilter = () => {};
     export let clearLogoFilter = () => {};
+    
+    /*
+    tags
+    ---
+    branding
+    gaming
+    logo
+    banner
+    combination
+    abstract
+    lettermark
+    wordmark
+    pictorial
+    emblem
+    illustrative
+    other
+    */
 
     // Gallery data structure
     const galleryItems = [
         {
             id: 1,
-            src: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=600&fit=crop',
-            alt: 'Modern Blue Logo',
-            title: 'Modern Blue Logo',
-            tags: ['branding', 'logo', 'minimal']
+            src: 'imgs/logos/wavifyLight.png',
+            alt: 'Wavify Music Logo (Light)',
+            title: 'Wavify Music Light Logo',
+            tags: ['branding', 'logo', 'lettermark']
         },
         {
             id: 2,
-            src: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop',
-            alt: 'Creative Brand Mark',
-            title: 'Creative Brand Mark',
-            tags: ['branding', 'mark', 'geometric']
+            src: 'imgs/banners/localVineRetail.png',
+            alt: 'Local Vine Retail Design',
+            title: 'Local Vine Retail Design',
+            tags: ['branding', 'banner', 'combination']
         },
         {
             id: 3,
-            src: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop',
-            alt: 'Ocean Wave Banner',
-            title: 'Ocean Wave Banner',
-            tags: ['banner', 'design', 'ocean']
+            src: 'imgs/logos/arkLogo.png',
+            alt: 'Ark User Logo',
+            title: 'Ark User Logo',
+            tags: ['branding', 'logo', 'combination']
         },
         {
             id: 4,
-            src: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=600&fit=crop',
-            alt: 'Tech Company Logo',
-            title: 'Tech Company Logo',
-            tags: ['branding', 'tech', 'modern']
+            src: 'imgs/logos/atnipLogoRedPrint2.png',
+            alt: 'Atnip Construction Redprint Design',
+            title: 'Atnip Construction Redprint Design',
+            tags: ['branding', 'logo', 'combination']
         },
         {
             id: 5,
-            src: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop',
-            alt: 'Gradient Design Banner',
-            title: 'Gradient Design Banner',
-            tags: ['banner', 'gradient', 'colorful']
+            src: 'imgs/banners/managerMonopoly_redone_Banner.png',
+            alt: 'Manager Monopoly Server Banner',
+            title: 'Manager Monopoly Server Banner',
+            tags: ['gaming', 'banner', 'combination']
         },
         {
             id: 6,
-            src: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=600&fit=crop',
-            alt: 'Minimalist Logo Set',
-            title: 'Minimalist Logo Set',
-            tags: ['branding', 'logo', 'minimal', 'set']
+            src: 'imgs/logos/sys8_blue.png',
+            alt: 'SystemEight User Logo',
+            title: 'System8 User Logo',
+            tags: ['branding', 'logo', 'lettermark']
         },
         {
             id: 7,
-            src: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop',
-            alt: 'Vintage Design Style',
-            title: 'Vintage Design Style',
-            tags: ['banner', 'design', 'vintage']
+            src: 'imgs/logos/stellapen2.png',
+            alt: 'Stellapen Geometric Design',
+            title: 'Stellapen Geometric Design',
+            tags: ['other', 'abstract']
         },
         {
             id: 8,
-            src: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=600&fit=crop',
-            alt: 'Modern Tech Branding',
-            title: 'Modern Tech Branding',
-            tags: ['branding', 'tech', 'modern']
+            src: 'imgs/logos/dwaaLogo2.png',
+            alt: 'DWAA User Logo',
+            title: 'DWAA User Logo',
+            tags: ['branding', 'logo', 'combination']
         },
         {
             id: 9,
-            src: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=600&fit=crop',
-            alt: 'Elegant Logo Design',
-            title: 'Elegant Logo Design',
-            tags: ['logo', 'minimal', 'elegant']
+            src: 'imgs/banners/pulsBanner.png',
+            alt: 'Puls. Discord Banner',
+            title: 'Puls. Discord Banner',
+            tags: ['other', 'banner', 'combination']
+        },
+        {
+            id: 10,
+            src: 'imgs/logos/poopsmp.png',
+            alt: 'PoopSMP Server Logo',
+            title: 'PoopSMP Server Logo',
+            tags: ['gaming', 'logo', 'pictorial']
+        },
+        {
+            id: 11,
+            src: 'imgs/logos/wordlerDiscord.png',
+            alt: 'Wordler Discord Logo',
+            title: 'Wordler Discord Logo',
+            tags: ['gaming', 'logo', 'pictorial']
+        },
+        {
+            id: 12,
+            src: 'imgs/logos/chOrg_vaporwave.png',
+            alt: 'Vaporwave Logo',
+            title: 'Vaporwave Logo',
+            tags: ['branding', 'logo', 'lettermark']
+        },
+        {
+            id: 13,
+            src: 'imgs/logos/gxGmail.png',
+            alt: 'Gmail Logo Stylized',
+            title: 'Gmail Logo Stylized',
+            tags: ['other', 'logo', 'lettermark']
+        },
+        {
+            id: 14,
+            src: 'imgs/banners/bapSauceBanner.png',
+            alt: 'Bapplesauce Discord Banner',
+            title: 'Bapplesauce Discord Banner',
+            tags: ['gaming', 'banner', 'combination']
+        },
+        {
+            id: 15,
+            src: 'imgs/banners/poetryXmas_banner2.png',
+            alt: 'Art of Poetry Discord Banner',
+            title: 'Art of Poetry Discord Banner',
+            tags: ['other', 'banner', 'combination']
+        },
+        {
+            id: 16,
+            src: 'imgs/illustrative/wordlerLogo.png',
+            alt: 'Wordler Logo',
+            title: 'Wordler Logo',
+            tags: ['gaming', 'logo', 'illustrative']
+        },
+        {
+            id: 17,
+            src: 'imgs/illustrative/cltLogo_blueRedGun_draft.png',
+            alt: 'Lasertag Logo Design',
+            title: 'Charged Lasertag Design',
+            tags: ['gaming', 'logo', 'illustrative']
+        },
+        {
+            id: 18,
+            src: 'imgs/illustrative/lunesAstroObjects.png',
+            alt: 'Lunes Astronaut Design',
+            title: 'Lunes Astronaut Design',
+            tags: ['other', 'illustrative']
+        },
+        {
+            id: 19,
+            src: 'imgs/illustrative/shadowEmblem.png',
+            alt: 'Lord Shadow Design',
+            title: 'Lord Shadow Design',
+            tags: ['gaming', 'logo', 'illustrative', 'pictorial']
+        },
+        {
+            id: 20,
+            src: 'imgs/illustrative/yousif.png',
+            alt: 'Yousif User Logo',
+            title: 'Yousif User Logo',
+            tags: ['branding', 'logo', 'illustrative', 'pictorial']
         }
     ];
 
@@ -531,9 +625,9 @@
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid var(--glassBord);
-        color: var(--txt);
+        background: rgba(191, 216, 255, .15);
+        border: 1px solid var(--txt3);
+        color: var(--txt3);
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
@@ -548,7 +642,7 @@
     }
 
     .closeBtn:hover {
-        background: var(--glassHov);
+        background: rgba(191, 216, 255, .3);
         transform: scale(1.1);
     }
 
