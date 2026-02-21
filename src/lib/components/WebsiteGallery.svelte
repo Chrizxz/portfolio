@@ -3,79 +3,49 @@
     export let setWebsiteFilter = () => {};
     export let clearWebsiteFilter = () => {};
 
-    // Website gallery data
+    /*
+    project type:
+    - business
+    - ecommerce
+    - gaming
+    - other
+    design type:
+    - landing
+    - app
+    - site
+    web style:
+    - dynamic
+    - static
+    - interactive
+    */
+    
     const websites = [
         {
             id: 1,
-            title: 'Modern Portfolio',
-            description: 'Responsive portfolio website',
-            image: 'https://images.unsplash.com/vector-1738312919533-2bdd58425783?q=80&w=2320&auto=format&fit=crop',
-            url: '/',
-            tags: ['portfolio', 'design']
+            title: 'Lunes Hosting',
+            description: 'Reliable game hosting at an affordable cost',
+            image: 'imgs/sites/lunes.host.png',
+            url: 'https://lunes.host',
+            tags: ['business', 'site', 'static'],
+            customTags: []
         },
         {
             id: 2,
-            title: 'E-Commerce Platform',
-            description: 'Full-featured online store',
-            image: 'https://images.unsplash.com/vector-1761645078994-e7aa36f349a8?q=80&w=1212&auto=format&fit=crop',
-            url: '/',
-            tags: ['ecommerce', 'shop']
+            title: 'Creator Laser Tag',
+            description: 'Minecraft laser tag event hosted by Venox Network',
+            image: 'imgs/sites/charged.venox.network.png',
+            url: 'https://charged.venox.network/',
+            tags: ['gaming', 'site', 'dynamic'],
+            customTags: ['collab']
         },
         {
             id: 3,
-            title: 'SaaS Dashboard',
-            description: 'Business analytics interface',
-            image: 'https://images.unsplash.com/vector-1761645078994-e7aa36f349a8?q=80&w=1212&auto=format&fit=crop',
-            url: '/',
-            tags: ['dashboard', 'app']
-        },
-        {
-            id: 4,
-            title: 'Creative Agency',
-            description: 'Visual storytelling website',
-            image: 'https://images.unsplash.com/vector-1738312919533-2bdd58425783?q=80&w=2320&auto=format&fit=crop',
-            url: '/',
-            tags: ['agency', 'creative']
-        },
-        {
-            id: 5,
-            title: 'Blog Platform',
-            description: 'Content management system',
-            image: 'https://images.unsplash.com/vector-1761645078994-e7aa36f349a8?q=80&w=1212&auto=format&fit=crop',
-            url: '/',
-            tags: ['blog', 'cms']
-        },
-        {
-            id: 6,
-            title: 'Travel Booking',
-            description: 'Vacation planning website',
-            image: 'https://images.unsplash.com/vector-1738312919533-2bdd58425783?q=80&w=2320&auto=format&fit=crop',
-            url: '/',
-            tags: ['travel', 'booking']
-        },
-        {
-            id: 7,
-            title: 'Fitness App',
-            description: 'Workout tracking interface',
-            image: 'https://images.unsplash.com/vector-1761645078994-e7aa36f349a8?q=80&w=1212&auto=format&fit=crop',
-            url: '/',
-            tags: ['fitness', 'app']
-        },
-        {
-            id: 8,
-            title: 'Music Streaming',
-            description: 'Audio player platform',
-            image: 'https://images.unsplash.com/vector-1738312919533-2bdd58425783?q=80&w=2320&auto=format&fit=crop',
-            url: '/',
-            tags: ['music', 'streaming']
-        },
-        {
-            id: 9,
-            title: 'Real Estate Portal',
-            description: 'Property listing website',
-            image: 'https://images.unsplash.com/vector-1761645078994-e7aa36f349a8?q=80&w=1212&auto=format&fit=crop',
-            url: '/',
-            tags: ['realestate', 'property']
+            title: 'Atnip Construction',
+            description: 'Building high-quality homes with superior craftsmanship.',
+            image: 'imgs/sites/atnipconstruction.com.png',
+            url: 'https://atnip.vercel.app/',
+            tags: ['business', 'site', 'static'],
+            customTags: []
         }
     ];
 
@@ -162,6 +132,9 @@
                                 <div class="cardTags">
                                     {#each site.tags as tag}
                                         <span class="smallTag">{tag}</span>
+                                    {/each}
+                                    {#each site.customTags as customTag}
+                                        <span class="customTag">{customTag}</span>
                                     {/each}
                                 </div>
                             </div>
@@ -389,6 +362,17 @@
     .smallTag {
         background: rgba(128, 204, 253, 0.2);
         color: var(--altColor);
+        padding: 0.3rem 0.65rem;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+
+    .customTag {
+        background: rgba(200, 118, 255, 0.2);
+        color: #c876ff;
         padding: 0.3rem 0.65rem;
         border-radius: 1rem;
         font-size: 0.7rem;

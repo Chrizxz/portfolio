@@ -17,9 +17,28 @@
 
     });
 
+    function easeOutQuad(t) {
+        return t * (2 - t);
+    }
+
     function backToTop() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        const startY = window.scrollY;
+        const duration = 600; // milliseconds
+        const startTime = Date.now();
+
+        const scroll = () => {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easeProgress = easeOutQuad(progress);
+            
+            window.scrollTo(0, startY * (1 - easeProgress));
+            
+            if (progress < 1) {
+                requestAnimationFrame(scroll);
+            }
+        };
+
+        requestAnimationFrame(scroll);
     }
 </script>
 

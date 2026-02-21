@@ -6,23 +6,23 @@
     export let clearLogoFilter = () => {};
     
     /*
-    tags
-    ---
-    branding
-    gaming
-    logo
-    banner
-    combination
-    abstract
-    lettermark
-    wordmark
-    pictorial
-    emblem
-    illustrative
-    other
+    project type:
+    - branding
+    - gaming
+    - other
+    design type:
+    - logo
+    - banner
+    logo style:
+    - combination
+    - abstract
+    - lettermark
+    - wordmark
+    - pictorial
+    - emblem
+    - illustrative
     */
 
-    // Gallery data structure
     const galleryItems = [
         {
             id: 1,
