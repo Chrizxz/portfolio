@@ -11,6 +11,14 @@
   let scroll;
   import { onMount } from 'svelte';
 
+  const latest = [
+    { id: 1, title: "Atnip Construction brand design", img: '/imgs/showcase/atnipDisplay.png' },
+    { id: 2, title: "A quick and clean logo redesign", img: '/imgs/showcase/edocDisplay.png' },
+    { id: 3, title: "GameStop rebrand idea mockup", img: '/imgs/showcase/gsRebrandDisplay.png' },
+    { id: 4, title: "A stylized thank you card", img: '/imgs/showcase/merciDisplay.png' },
+    { id: 5, title: "Venox discord emoji icon set", img: '/imgs/showcase/vnIconsDisplay.png' }
+  ];
+
   onMount(() => {
     const swiperDes = new Swiper('.swiperDes', {
       direction: 'vertical',
@@ -103,26 +111,13 @@
         <div class="latestSwiperMob">
             <div class="swiperMob">
               <div class="swiper-wrapper">
-                  <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
-                  >
-                  <p1>Chriz's Banner (Blue)</p1>
-                  </div>
-                  <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
-                  >
-                  <p1>Chriz's Banner (Yellow)</p1>
-                  </div>
-                  <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradientRed.png')"
-                  >
-                  <p1>Chriz's Banner (Red)</p1>
-                  </div>
-                  <div class="swiper-slide" 
-                    style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')"
-                  >
-                  <p1>Chriz's Banner (Green)</p1>
-                  </div>
+              {#each latest as project (project.id)}
+                <div class="swiper-slide" 
+                  style={`background-image: url('${project.img}')`}
+                >
+                <p1>{project.title}</p1>
+                </div>
+              {/each}
               </div>
             </div>
             <div class="swiper-pagination swiperPageMob"></div>
@@ -142,26 +137,13 @@
           <div class="swiper-pagination swiperPageDes"></div>
           <div class="swiperDes">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" 
-                style="background-image: url('/imgs/banners/chOrg_gradient2.png')"
-              >
-              <p1>Chriz's Banner (Blue)</p1>
-              </div>
-              <div class="swiper-slide" 
-                style="background-image: url('/imgs/banners/chOrg_gradientYellow.png')"
-              >
-              <p1>Chriz's Banner (Yellow)</p1>
-              </div>
-              <div class="swiper-slide" 
-                style="background-image: url('/imgs/banners/chOrg_gradientRed.png')"
-              >
-              <p1>Chriz's Banner (Red)</p1>
-              </div>
-              <div class="swiper-slide" 
-                style="background-image: url('/imgs/banners/chOrg_gradientGreen.png')"
-              >
-              <p1>Chriz's Banner (Green)</p1>
-              </div>
+              {#each latest as project (project.id)}
+                <div class="swiper-slide" 
+                  style={`background-image: url('${project.img}')`}
+                >
+                <p1>{project.title}</p1>
+                </div>
+              {/each}
             </div>
           </div>
         </div>
