@@ -14,7 +14,7 @@
     let selectedWebsiteFilter = null;
 
     onMount(() => {
-        // Check for filter in URL hash
+        // for filter in URL hash
         const hash = window.location.hash;
         if (hash.includes('logoFilter=')) {
             const logoTag = hash.split('logoFilter=')[1].split('&')[0];
@@ -26,10 +26,14 @@
             const websiteTag = hash.split('websiteFilter=')[1].split('&')[0];
             if (websiteTag) {
                 selectedWebsiteFilter = websiteTag;
+                // Scroll to website section
+                setTimeout(() => {
+                    document.getElementById('websiteSection')?.scrollIntoView({ behavior: 'smooth' });
+                }, 0);
             }
         }
 
-        // Listen for hash changes
+        // for hash changes
         const handleHashChange = () => {
             const hash = window.location.hash;
             selectedLogoFilter = null;
@@ -45,6 +49,9 @@
                 const websiteTag = hash.split('websiteFilter=')[1].split('&')[0];
                 if (websiteTag) {
                     selectedWebsiteFilter = websiteTag;
+                    setTimeout(() => {
+                        document.getElementById('websiteSection')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 0);
                 }
             }
         };

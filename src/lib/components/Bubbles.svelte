@@ -145,6 +145,7 @@ onMount(() => {
 </style>
 
 <div class="bubbleWrap">
+    <!-- svelte-ignore element_invalid_self_closing_tag -->
     <button 
         type="button"
         aria-label="Filter by branding"
@@ -154,8 +155,9 @@ onMount(() => {
         data-x="50"
         data-y="50"
         data-size="250"
-        style="background-image: url('/imgs/logos/wavifyLight.png');"
+        style="background-image: url('/imgs/logos/wavifyDark.png');"
     />
+    <!-- svelte-ignore element_invalid_self_closing_tag -->
     <button 
         type="button"
         aria-label="Filter by logo"
@@ -167,6 +169,7 @@ onMount(() => {
         data-size="150"
         style="background-image: url('/imgs/logos/sys8_blue.png');"
     />
+    <!-- svelte-ignore element_invalid_self_closing_tag -->
     <button 
         type="button"
         aria-label="Filter by design"
@@ -178,6 +181,7 @@ onMount(() => {
         data-size="80"
         style="background-image: url('/imgs/logos/stellapen2.png');"
     />
+    <!-- svelte-ignore element_invalid_self_closing_tag -->
     <button 
         type="button"
         aria-label="Filter by banner"
@@ -189,6 +193,7 @@ onMount(() => {
         data-size="150"
         style="background-image: url('/imgs/logos/lunesLogo.png');"
     />
+    <!-- svelte-ignore element_invalid_self_closing_tag -->
     <button 
         type="button"
         aria-label="Filter by modern"
