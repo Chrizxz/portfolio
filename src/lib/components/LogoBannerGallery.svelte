@@ -25,84 +25,91 @@
 
     const galleryItems = [
         {
-            id: 1,
+            id: 26,
+            src: 'imgs/other/water2026.png',
+            alt: '2026 Ocean Concept Art',
+            title: '2026 Ocean Concept Art',
+            tags: ['other', 'logo', 'lettermark']
+        },
+        {
+            id: 25,
             src: 'imgs/logos/wavifyLight.png',
             alt: 'Wavify Music Logo (Light)',
             title: 'Wavify Music Light Logo',
             tags: ['branding', 'logo', 'lettermark']
         },
         {
-            id: 2,
+            id: 24,
             src: 'imgs/banners/localVineRetail.png',
             alt: 'Local Vine Retail Design',
             title: 'Local Vine Retail Design',
             tags: ['branding', 'banner', 'combination', 'pictorial']
         },
         {
-            id: 3,
+            id: 23,
             src: 'imgs/logos/arkLogo.png',
             alt: 'Ark User Logo',
             title: 'Ark User Logo',
             tags: ['branding', 'logo', 'combination']
         },
         {
-            id: 4,
+            id: 22,
             src: 'imgs/logos/atnipLogoRedPrint2.png',
             alt: 'Atnip Construction Redprint Design',
             title: 'Atnip Construction Redprint Design',
             tags: ['branding', 'logo', 'combination']
         },
         {
-            id: 5,
+            id: 21,
             src: 'imgs/banners/managerMonopoly_redone_Banner.png',
             alt: 'Manager Monopoly Server Banner',
             title: 'Manager Monopoly Server Banner',
             tags: ['gaming', 'banner', 'combination', 'emblem']
         },
         {
-            id: 6,
+            id: 20,
             src: 'imgs/logos/sys8_blue.png',
             alt: 'SystemEight User Logo',
             title: 'System8 User Logo',
             tags: ['branding', 'logo', 'lettermark']
         },
         {
-            id: 7,
+            id: 19,
             src: 'imgs/logos/stellapen2.png',
             alt: 'Stellapen Geometric Design',
             title: 'Stellapen Geometric Design',
             tags: ['other', 'abstract']
         },
         {
-            id: 8,
+            id: 18,
             src: 'imgs/logos/dwaaLogo2.png',
             alt: 'DWAA User Logo',
             title: 'DWAA User Logo',
             tags: ['branding', 'logo', 'combination']
         },
         {
-            id: 9,
+            id: 17,
             src: 'imgs/banners/pulsBanner.png',
             alt: 'Puls. Discord Banner',
             title: 'Puls. Discord Banner',
             tags: ['other', 'banner', 'combination']
         },
         {
-            id: 10,
+            id: 16,
             src: 'imgs/logos/poopsmp.png',
             alt: 'PoopSMP Server Logo',
             title: 'PoopSMP Server Logo',
             tags: ['gaming', 'logo', 'pictorial']
         },
         {
-            id: 11,
+            id: 15,
             src: 'imgs/logos/wordlerDiscord.png',
             alt: 'Wordler Discord Logo',
             title: 'Wordler Discord Logo',
             tags: ['gaming', 'logo', 'pictorial']
         },
         {
-            id: 12,
+            id: 14,
             src: 'imgs/logos/chOrg_vaporwave.png',
             alt: 'Vaporwave Logo',
             title: 'Vaporwave Logo',
@@ -116,84 +123,84 @@
             tags: ['other', 'logo', 'lettermark']
         },
         {
-            id: 14,
+            id: 12,
             src: 'imgs/banners/bapSauceBanner.png',
             alt: 'Bapplesauce Discord Banner',
             title: 'Bapplesauce Discord Banner',
             tags: ['gaming', 'banner', 'combination']
         },
         {
-            id: 15,
+            id: 11,
             src: 'imgs/banners/poetryXmas_banner2.png',
             alt: 'Art of Poetry Discord Banner',
             title: 'Art of Poetry Discord Banner',
             tags: ['other', 'banner', 'combination']
         },
         {
-            id: 16,
+            id: 10,
             src: 'imgs/illustrative/wordlerLogo.png',
             alt: 'Wordler Logo',
             title: 'Wordler Logo',
             tags: ['gaming', 'logo', 'illustrative']
         },
         {
-            id: 17,
+            id: 9,
             src: 'imgs/illustrative/cltLogo_blueRedGun_draft.png',
             alt: 'Lasertag Logo Design',
             title: 'Charged Lasertag Design',
             tags: ['gaming', 'logo', 'illustrative']
         },
         {
-            id: 18,
+            id: 8,
             src: 'imgs/illustrative/lunesAstroObjects.png',
             alt: 'Lunes Astronaut Design',
             title: 'Lunes Astronaut Design',
             tags: ['other', 'illustrative']
         },
         {
-            id: 19,
+            id: 7,
             src: 'imgs/illustrative/shadowEmblem.png',
             alt: 'Lord Shadow Design',
             title: 'Lord Shadow Design',
             tags: ['gaming', 'logo', 'illustrative', 'pictorial']
         },
         {
-            id: 20,
+            id: 6,
             src: 'imgs/illustrative/yousif.png',
             alt: 'Yousif User Logo',
             title: 'Yousif User Logo',
             tags: ['branding', 'logo', 'illustrative', 'pictorial']
         },
         {
-            id: 21,
+            id: 5,
             src: 'imgs/logos/abztrakt.png',
             alt: 'Abztrakt Logo',
             title: 'Abztrakt Logo',
             tags: ['other', 'logo', 'combination', 'abstract']
         },
         {
-            id: 22,
+            id: 4,
             src: 'imgs/logos/tromboneLogo.png',
             alt: 'Trombone Logo',
             title: 'Trombone Logo',
             tags: ['gaming', 'logo', 'emblem']
         },
         {
-            id: 23,
+            id: 3,
             src: 'imgs/logos/srnyxCode.png',
             alt: 'Srnyx Code Logo',
             title: 'Srnyx Code Logo',
             tags: ['other', 'logo', 'lettermark']
         },
         {
-            id: 24,
+            id: 2,
             src: 'imgs/logos/yokaiLogo2.png',
             alt: 'Yokai User Logo',
             title: 'Yokai User Logo',
             tags: ['gaming', 'logo', 'emblem']
         },
         {
-            id: 25,
+            id: 1,
             src: 'imgs/banners/bapBannerYT2.png',
             alt: 'Bapplause YouTube Banner',
             title: 'Bapplause YouTube Banner',
@@ -203,26 +210,43 @@
 
     let selectedItem = null;
     let scrollContainer;
+    let showMore = false;
+    let columns = 4; // default
+    let galleryGridEl;
 
-    // Extract unique tags from gallery items
     $: uniqueTags = [...new Set(galleryItems.flatMap(item => item.tags))].sort();
-
-    // Filter items based on selected tag
-    $: filteredItems = selectedFilter 
+    $: filteredItems = selectedFilter
         ? galleryItems.filter(item => item.tags.includes(selectedFilter))
         : galleryItems;
 
-    onMount(() => {
-        const handleKeydown = (e) => {
-            if (e.key === 'Escape' && selectedItem) {
-                closeModal();
-            }
-        };
+    // 2 rows
+    $: visibleItems = showMore ? filteredItems : filteredItems.slice(0, columns * 2);
+    $: hasMore = filteredItems.length > columns * 2;
 
+    // reset showMore when filter changes
+    // $: if (selectedFilter !== undefined) showMore = false;
+
+    function measureColumns() {
+        if (!galleryGridEl) return;
+        const style = window.getComputedStyle(galleryGridEl);
+        const cols = style.getPropertyValue('grid-template-columns').split(' ').length;
+        columns = cols;
+    }
+
+    onMount(() => {
+        measureColumns();
+
+        const ro = new ResizeObserver(() => measureColumns());
+        if (galleryGridEl) ro.observe(galleryGridEl);
+
+        const handleKeydown = (e) => {
+            if (e.key === 'Escape' && selectedItem) closeModal();
+        };
         window.addEventListener('keydown', handleKeydown);
 
         return () => {
             window.removeEventListener('keydown', handleKeydown);
+            ro.disconnect();
         };
     });
 
@@ -237,24 +261,11 @@
     }
 
     function handleBackdropClick(e) {
-        if (e.target === e.currentTarget) {
-            closeModal();
-        }
-    }
-
-    function scrollGallery(direction) {
-        if (scrollContainer) {
-            const scrollAmount = 320; // card width + gap
-            scrollContainer.scrollBy({
-                left: direction === 'left' ? -scrollAmount : scrollAmount,
-                behavior: 'smooth'
-            });
-        }
+        if (e.target === e.currentTarget) closeModal();
     }
 </script>
 
 <div class="logoBannerGalleryContainer">
-    <!-- Filter Bar -->
     <div class="filterBarWrapper">
         <div class="filterBarScroll">
             <div class="filterBarContent">
@@ -262,7 +273,7 @@
                     class="filterBtn {selectedFilter === null ? 'active' : ''}"
                     on:click={clearLogoFilter}
                 >
-                    All
+                    ALL
                 </button>
                 {#each uniqueTags as tag (tag)}
                     <button 
@@ -283,22 +294,15 @@
         </div>
     {:else}
         <div class="galleryWrapper">
-            {#if filteredItems.length > 3}
-                <button class="scrollBtn scrollBtn-left" on:click={() => scrollGallery('left')} aria-label="Scroll left">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-            {/if}
-            
-            <div class="galleryScroll" bind:this={scrollContainer}>
-                <div class="galleryGrid">
-                    {#each filteredItems as item (item.id)}
-                        <div 
-                            class="galleryItem" 
-                            on:click={() => openModal(item)}
-                            on:keydown={(e) => e.key === 'Enter' && openModal(item)}
-                            role="button"
-                            tabindex="0"
-                        >
+            <div class="galleryGrid" bind:this={galleryGridEl}>
+                {#each visibleItems as item (item.id)}
+                    <div
+                        class="galleryItem"
+                        on:click={() => openModal(item)}
+                        on:keydown={(e) => e.key === 'Enter' && openModal(item)}
+                        role="button"
+                        tabindex="0"
+                    >
                         <div class="itemImageWrapper">
                             <img src={item.src} alt={item.alt} loading="lazy" />
                             <div class="itemOverlay">
@@ -314,12 +318,11 @@
                         </div>
                     </div>
                 {/each}
-                </div>
             </div>
 
-            {#if filteredItems.length > 3}
-                <button class="scrollBtn scrollBtn-right" on:click={() => scrollGallery('right')} aria-label="Scroll right">
-                    <i class="fa-solid fa-chevron-right"></i>
+            {#if hasMore}
+                <button class="showMoreBtn" on:click={() => (showMore = !showMore)}>
+                    {showMore ? 'Show less ↑' : 'Show more ↓'}
                 </button>
             {/if}
         </div>
@@ -361,30 +364,13 @@
     }
 
     .filterBarScroll {
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
-        scrollbar-color: var(--txt2) transparent;
-    }
-
-    .filterBarScroll::-webkit-scrollbar {
-        height: 4px;
-    }
-
-    .filterBarScroll::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    .filterBarScroll::-webkit-scrollbar-thumb {
-        background: var(--txt2);
-        border-radius: 2px;
+        width: 100%;
     }
 
     .filterBarContent {
         display: flex;
         gap: 0.75rem;
-        min-width: min-content;
+        flex-wrap: wrap;
         padding: 0.5rem 0;
     }
 
@@ -417,10 +403,34 @@
 
     .galleryWrapper {
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 1rem;
         position: relative;
     }
+
+    .showMoreBtn {
+        display: block;
+        width: 100%;
+        margin-top: 1.25rem;
+        padding: 0.6rem 0;
+        background: none;
+        border: none;
+        color: var(--txt3);
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        transition: color 0.2s ease;
+        text-align: center;
+    }
+
+    .showMoreBtn:hover {
+        color: var(--txt);
+    }
+
+    /* 
 
     .galleryScroll {
         overflow-x: auto;
@@ -433,15 +443,22 @@
 
     .galleryScroll::-webkit-scrollbar {
         display: none;
-    }
+    } */
 
-    .galleryGrid {
+    /* .galleryGrid {
         display: grid;
         grid-auto-flow: column;
         grid-template-rows: 1fr;
         gap: 2rem;
         padding: 0.5rem 0;
         width: fit-content;
+    } */
+
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1rem;
+        width: 100%;
     }
 
     .noResults {
@@ -540,7 +557,7 @@
         gap: 0.5rem;
     }
 
-    .scrollBtn {
+    /* .scrollBtn {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -571,7 +588,7 @@
 
     .scrollBtn-right {
         right: 0;
-    }
+    } */
 
     .tag {
         background: rgba(255, 255, 255, 0.2);
@@ -692,11 +709,11 @@
             height: 240px;
         }
 
-        .scrollBtn {
+        /* .scrollBtn {
             width: 2.2rem;
             height: 2.2rem;
             font-size: 0.9rem;
-        }
+        } */
 
         .modalContent {
             padding: 1.5rem;
@@ -744,11 +761,11 @@
             font-size: 0.65rem;
         }
 
-        .scrollBtn {
+        /* .scrollBtn {
             width: 2rem;
             height: 2rem;
             font-size: 0.8rem;
-        }
+        } */
 
         .modalBackdrop {
             padding: 0.5rem;

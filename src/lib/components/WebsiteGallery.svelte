@@ -1,24 +1,10 @@
 <script>
+    import { onMount } from 'svelte';
+
     export let selectedFilter = null;
     export let setWebsiteFilter = () => {};
     export let clearWebsiteFilter = () => {};
 
-    /*
-    project type:
-    - business
-    - ecommerce
-    - gaming
-    - other
-    design type:
-    - landing
-    - app
-    - site
-    web style:
-    - dynamic
-    - static
-    - interactive
-    */
-    
     const websites = [
         {
             id: 1,
@@ -46,31 +32,49 @@
             url: 'https://atnip.vercel.app/',
             tags: ['business', 'site', 'static'],
             customTags: []
-        }
+        },
+        // {
+        //     id: 5,
+        //     title: 'Venox Network',
+        //     description: 'A vibrant Minecraft community with engaging content and events',
+        //     image: 'imgs/sites/venox.network.png',
+        //     url: 'https://venox.network/',
+        //     tags: ['gaming', 'site', 'dynamic'],
+        //     customTags: ['collab']
+        // },
     ];
 
-    let scrollContainer;
+    let showMore = false;
+    let columns = 3; // fallback
+    let websiteGridEl;
 
-    // Extract unique tags from websites
     $: uniqueTags = [...new Set(websites.flatMap(site => site.tags))].sort();
-
-    // Filter items based on selected tag
-    $: filteredItems = selectedFilter 
+    $: filteredItems = selectedFilter
         ? websites.filter(site => site.tags.includes(selectedFilter))
         : websites;
 
-    function openWebsite(url) {
-        window.open(url, '_blank', 'noopener,noreferrer');
+    $: visibleItems = showMore ? filteredItems : filteredItems.slice(0, columns * 2);
+    $: hasMore = filteredItems.length > columns * 2;
+
+    $: if (selectedFilter !== undefined) showMore = false;
+
+    function measureColumns() {
+        if (!websiteGridEl) return;
+        const cols = window.getComputedStyle(websiteGridEl)
+            .getPropertyValue('grid-template-columns')
+            .split(' ').length;
+        columns = cols;
     }
 
-    function scrollGallery(direction) {
-        if (scrollContainer) {
-            const scrollAmount = 380; // card width + gap
-            scrollContainer.scrollBy({
-                left: direction === 'left' ? -scrollAmount : scrollAmount,
-                behavior: 'smooth'
-            });
-        }
+    onMount(() => {
+        measureColumns();
+        const ro = new ResizeObserver(() => measureColumns());
+        if (websiteGridEl) ro.observe(websiteGridEl);
+        return () => ro.disconnect();
+    });
+
+    function openWebsite(url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
     }
 </script>
 
@@ -79,14 +83,14 @@
     <div class="filterBarWrapper">
         <div class="filterBarScroll">
             <div class="filterBarContent">
-                <button 
+                <button
                     class="filterBtn {selectedFilter === null ? 'active' : ''}"
                     on:click={clearWebsiteFilter}
                 >
                     ALL
                 </button>
                 {#each uniqueTags as tag (tag)}
-                    <button 
+                    <button
                         class="filterBtn {selectedFilter === tag ? 'active' : ''}"
                         on:click={() => setWebsiteFilter(tag)}
                     >
@@ -104,48 +108,40 @@
         </div>
     {:else}
         <div class="galleryWrapper">
-            {#if filteredItems.length > 3}
-                <button class="scrollBtn scrollBtn-left" on:click={() => scrollGallery('left')} aria-label="Scroll left">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-            {/if}
-
-            <div class="galleryScroll" bind:this={scrollContainer}>
-                <div class="websiteGrid">
-                    {#each filteredItems as site (site.id)}
-                        <div 
-                            class="websiteCard"
-                            on:click={() => openWebsite(site.url)}
-                            on:keydown={(e) => e.key === 'Enter' && openWebsite(site.url)}
-                            role="button"
-                            tabindex="0"
-                        >
-                            <div class="cardImageWrapper">
-                                <img src={site.image} alt={site.title} loading="lazy" />
-                                <div class="cardOverlay">
-                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                </div>
-                            </div>
-                            <div class="cardInfo">
-                                <h3>{site.title}</h3>
-                                <p>{site.description}</p>
-                                <div class="cardTags">
-                                    {#each site.tags as tag}
-                                        <span class="smallTag">{tag}</span>
-                                    {/each}
-                                    {#each site.customTags as customTag}
-                                        <span class="customTag">{customTag}</span>
-                                    {/each}
-                                </div>
+            <div class="websiteGrid" bind:this={websiteGridEl}>
+                {#each visibleItems as site (site.id)}
+                    <div
+                        class="websiteCard"
+                        on:click={() => openWebsite(site.url)}
+                        on:keydown={(e) => e.key === 'Enter' && openWebsite(site.url)}
+                        role="button"
+                        tabindex="0"
+                    >
+                        <div class="cardImageWrapper">
+                            <img src={site.image} alt={site.title} loading="lazy" />
+                            <div class="cardOverlay">
+                                <i class="fa-solid fa-arrow-up-right"></i>
                             </div>
                         </div>
-                    {/each}
-                </div>
+                        <div class="cardInfo">
+                            <h3>{site.title}</h3>
+                            <p>{site.description}</p>
+                            <div class="cardTags">
+                                {#each site.tags as tag}
+                                    <span class="smallTag">{tag}</span>
+                                {/each}
+                                {#each site.customTags as customTag}
+                                    <span class="customTag">{customTag}</span>
+                                {/each}
+                            </div>
+                        </div>
+                    </div>
+                {/each}
             </div>
 
-            {#if filteredItems.length > 3}
-                <button class="scrollBtn scrollBtn-right" on:click={() => scrollGallery('right')} aria-label="Scroll right">
-                    <i class="fa-solid fa-chevron-right"></i>
+            {#if hasMore}
+                <button class="showMoreBtn" on:click={() => (showMore = !showMore)}>
+                    {showMore ? 'Show less ↑' : 'Show more ↓'}
                 </button>
             {/if}
         </div>
@@ -167,30 +163,13 @@
     }
 
     .filterBarScroll {
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
-        scrollbar-color: var(--txt2) transparent;
-    }
-
-    .filterBarScroll::-webkit-scrollbar {
-        height: 4px;
-    }
-
-    .filterBarScroll::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    .filterBarScroll::-webkit-scrollbar-thumb {
-        background: var(--txt2);
-        border-radius: 2px;
+        width: 100%;
     }
 
     .filterBarContent {
         display: flex;
         gap: 0.75rem;
-        min-width: min-content;
+        flex-wrap: wrap;
         padding: 0.5rem 0;
     }
 
@@ -221,33 +200,18 @@
     }
 
     .galleryWrapper {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        position: relative;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .galleryScroll {
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        flex: 1;
-    }
-
-    .galleryScroll::-webkit-scrollbar {
-        display: none;
-    }
-
+    /* Switched from grid-auto-flow: column to auto-fill rows */
     .websiteGrid {
         display: grid;
-        grid-auto-flow: column;
-        grid-template-rows: 1fr;
-        gap: 2.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 2rem;
+        width: 100%;
         padding: 0.5rem 0;
-        width: fit-content;
     }
 
     .noResults {
@@ -284,8 +248,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        flex-shrink: 0;
-        width: 350px;
+        /* removed fixed width — grid handles sizing now */
     }
 
     .websiteCard:hover {
@@ -381,37 +344,25 @@
         letter-spacing: 0.3px;
     }
 
-    .scrollBtn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid var(--glassBord);
-        color: var(--txt);
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
+    .showMoreBtn {
+        display: block;
+        width: 100%;
+        margin-top: 1.25rem;
+        padding: 0.6rem 0;
+        background: none;
+        border: none;
+        color: var(--txt3);
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        z-index: 10;
-        backdrop-filter: blur(5px);
-        flex-shrink: 0;
+        letter-spacing: 0.5px;
+        transition: color 0.2s ease;
+        text-align: center;
     }
 
-    .scrollBtn:hover {
-        background: var(--glassHov);
-        transform: translateY(-50%) scale(1.1);
-    }
-
-    .scrollBtn-left {
-        left: 0;
-    }
-
-    .scrollBtn-right {
-        right: 0;
+    .showMoreBtn:hover {
+        color: var(--txt);
     }
 
     /* Mobile Responsive */
@@ -420,14 +371,8 @@
             max-width: 98%;
         }
 
-        .websiteCard {
-            width: 300px;
-        }
-
-        .scrollBtn {
-            width: 2.2rem;
-            height: 2.2rem;
-            font-size: 0.9rem;
+        .websiteGrid {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         }
     }
 
@@ -436,12 +381,9 @@
             max-width: 90%;
         }
 
-        .websiteCard {
-            width: 250px;
-        }
-
         .websiteGrid {
             gap: 1.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
         }
 
         .cardInfo {
@@ -458,12 +400,6 @@
 
         .cardOverlay {
             font-size: 2rem;
-        }
-
-        .scrollBtn {
-            width: 2rem;
-            height: 2rem;
-            font-size: 0.8rem;
         }
 
         .noResults {
