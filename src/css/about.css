@@ -95,7 +95,7 @@
     margin-right: auto;
     position: relative;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(2px) saturate(190%);
+    backdrop-filter: blur(15px) saturate(190%);
     border-radius: 20rem;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
     inset 0 4px 20px rgba(38, 111, 246, 0.2);
@@ -128,10 +128,10 @@
     line-height: 1.6;
 }
 
-.contentBlock p,
+/* .contentBlock p,
 .contentBlock h2 {
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.6));
-}
+} */
 
 .profWrap {
     display: flex;

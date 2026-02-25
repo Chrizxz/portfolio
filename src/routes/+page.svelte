@@ -12,9 +12,9 @@
   import { onMount } from 'svelte';
 
   const latest = [
-    { id: 1, title: "Atnip Construction brand design", img: '/imgs/showcase/atnipDisplay.png' },
-    { id: 2, title: "A quick and clean logo redesign", img: '/imgs/showcase/edocDisplay.png' },
-    { id: 3, title: "GameStop rebrand idea mockup", img: '/imgs/showcase/gsRebrandDisplay.png' },
+    { id: 1, title: "A new wave ushering in for 2026", img: '/imgs/showcase/water2026Display.png' },
+    { id: 2, title: "Atnip Construction brand design", img: '/imgs/showcase/atnipDisplay.png' },
+    { id: 3, title: "A quick and clean logo redesign", img: '/imgs/showcase/edocDisplay.png' },
     { id: 4, title: "A stylized thank you card", img: '/imgs/showcase/merciDisplay.png' },
     { id: 5, title: "Venox discord emoji icon set", img: '/imgs/showcase/vnIconsDisplay.png' }
   ];

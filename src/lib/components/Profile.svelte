@@ -91,7 +91,7 @@
   </style>
   
 <div class="card-container">
-  <div class="card-stack" style="transform: rotateX({rotateX + 25}deg) rotateY({rotateY-20}deg); --layer-spacing: {layerSpacing};">
+  <div class="card-stack" style="transform: rotateX({rotateX}deg) rotateY({rotateY}deg); --layer-spacing: {layerSpacing};"> <!--x+25,y-20-->
     <div class="card-layer card-layer-1"></div>
     <div class="card-layer card-layer-2"></div>
     <div class="card-layer card-layer-3"></div>

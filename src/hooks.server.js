@@ -1,6 +1,4 @@
-
 /** @type {import('@sveltejs/kit').Handle} */
-
 export async function handle({ event, resolve }) {
     const redirects = new Map([
         ["/discord", "https://discord.gg/ZJ9PwQEC6E"],
@@ -13,12 +11,12 @@ export async function handle({ event, resolve }) {
         ["/roblox", "https://www.roblox.com/users/729731435/profile"],
         ["/playlist", "https://open.spotify.com/playlist/2jY8XKNHjYmR3UhOHW4Zb6?si=a4595c5b92664f3f"],
         ["/pl", "https://open.spotify.com/playlist/2jY8XKNHjYmR3UhOHW4Zb6?si=a4595c5b92664f3f"],
-        ["/playlist2", "https://open.spotify.com/playlist/4Ob6cNM3147iFcIMDDtYnp?si=23890ac10d6744fc"],
-        ["/pl2", "https://open.spotify.com/playlist/4Ob6cNM3147iFcIMDDtYnp?si=23890ac10d6744fc"],
-        ["/playlist3", "https://open.spotify.com/playlist/6aqs0yCZr7MIBRmfP4wMF4?si=bb62661a876f44a4"],
-        ["/pl3", "https://open.spotify.com/playlist/6aqs0yCZr7MIBRmfP4wMF4?si=bb62661a876f44a4"],
-        ["/playlist4", "https://open.spotify.com/playlist/0AJWs2wvPlKIN3pa3T2B2Q?si=25329ca16a8e41c3"],
-        ["/pl4", "https://open.spotify.com/playlist/0AJWs2wvPlKIN3pa3T2B2Q?si=25329ca16a8e41c3"],
+        // ["/playlist2", "https://open.spotify.com/playlist/4Ob6cNM3147iFcIMDDtYnp?si=23890ac10d6744fc"],
+        // ["/pl2", "https://open.spotify.com/playlist/4Ob6cNM3147iFcIMDDtYnp?si=23890ac10d6744fc"],
+        ["/playlist2", "https://open.spotify.com/playlist/6aqs0yCZr7MIBRmfP4wMF4?si=bb62661a876f44a4"],
+        ["/pl2", "https://open.spotify.com/playlist/6aqs0yCZr7MIBRmfP4wMF4?si=bb62661a876f44a4"],
+        ["/playlist3", "https://open.spotify.com/playlist/0AJWs2wvPlKIN3pa3T2B2Q?si=25329ca16a8e41c3"],
+        ["/pl3", "https://open.spotify.com/playlist/0AJWs2wvPlKIN3pa3T2B2Q?si=25329ca16a8e41c3"],
         ["/steam", "https://steamcommunity.com/id/chrizftw/"],
         ["/minecraft", "https://namemc.com/chrizxz"],
         ["/spotify", "https://open.spotify.com/user/3lzvwkeppejdqmri51h330vza"],
@@ -37,5 +35,26 @@ export async function handle({ event, resolve }) {
         return Response.redirect(redirects.get(event.url.pathname), 302);
     }
 
+    if (redirects.has(event.url.pathname)) {
+        const destination = redirects.get(event.url.pathname);
+        console.log(`[${event.getClientAddress()}] ${event.url.pathname} → ${destination}`);
+        return Response.redirect(destination, 302);
+    }
+
+    const BOT_PATTERNS = [/\.php(\d|$)/, /wp-admin/, /wp-includes/, /wp-content/, /wp-config/, /wp-trackback/, /\.env/, /alfa/];
+    if (BOT_PATTERNS.some(p => p.test(event.url.pathname))) {
+        return new Response('Not found', { status: 404 });
+    }
+
     return resolve(event);
+}
+
+// Suppress 404 console spam (bots, robots.txt, .well-known, etc.)
+/** @type {import('@sveltejs/kit').HandleError} */
+export function handleError({ error }) {
+    if (error?.status === 404) {
+        return { message: 'Not found' };
+    }
+    console.error(error?.stack);
+    return { message: 'Internal error' };
 }
