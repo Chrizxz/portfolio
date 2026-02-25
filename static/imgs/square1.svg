@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.16 390.16">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.16 390.16">
   <defs>
     <style>
       .cls-1 {
+        fill: none;
+        stroke: #36b2ff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+
+      .cls-2 {
         fill: #008ced;
+      }
+
+      .cls-3 {
+        opacity: .5;
       }
     </style>
   </defs>
   <g id="squares">
-    <path class="cls-1" d="M40,0h250.16c55.19,0,100,44.81,100,100v190.16c0,55.19-44.81,100-100,100H100c-55.19,0-100-44.81-100-100V40C0,17.92,17.92,0,40,0Z"/>
+    <path class="cls-2" d="M40,0h250.16c55.19,0,100,44.81,100,100v190.16c0,55.19-44.81,100-100,100H100c-55.19,0-100-44.81-100-100V40C0,17.92,17.92,0,40,0Z"/>
+    <g class="cls-3">
+      <line class="cls-1" x1="48.8" y1="99.7" x2="327.01" y2="99.7"/>
+      <line class="cls-1" x1="48.8" y1="147.95" x2="341.36" y2="147.95"/>
+      <line class="cls-1" x1="48.8" y1="196.19" x2="327.01" y2="196.19"/>
+      <line class="cls-1" x1="48.8" y1="244.43" x2="341.36" y2="244.43"/>
+    </g>
   </g>
 </svg>

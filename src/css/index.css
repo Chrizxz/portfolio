@@ -668,6 +668,7 @@
     width: 10rem;
     height: 10rem;
     position: absolute;
+    transition: filter 1s ease-in-out;
 }
 
 .connectSquare:nth-child(3) {
@@ -677,14 +678,17 @@
     height: 10rem;
     position: absolute;
     z-index: 2;
+    transition: filter .5s ease-in-out;
 }
 
 .connectContent a:hover .connectSquare:nth-child(2) {
     animation: moveSquare1 0.5s forwards;
+    filter: saturate(190%)
 }
 
 .connectContent a:hover .connectSquare:nth-child(3) {
     animation: moveSquare2 0.5s forwards;
+    filter: saturate(190%)
 }
 
 .connectContent a:not(:hover) .connectSquare:nth-child(2) {
