@@ -31,6 +31,14 @@
                     document.getElementById('websiteSection')?.scrollIntoView({ behavior: 'smooth' });
                 }, 0);
             }
+        } else if (hash.includes('websiteSection')) {
+            setTimeout(() => {
+                document.getElementById('websiteSection')?.scrollIntoView({ behavior: 'smooth' });
+            }, 0);
+        } else if (hash.includes('logoSection')) {
+            setTimeout(() => {
+                document.getElementById('logoSection')?.scrollIntoView({ behavior: 'smooth' });
+            }, 0);
         }
 
         // for hash changes

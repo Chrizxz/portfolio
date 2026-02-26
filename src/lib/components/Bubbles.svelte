@@ -184,9 +184,9 @@ onMount(() => {
     <!-- svelte-ignore element_invalid_self_closing_tag -->
     <button 
         type="button"
-        aria-label="Filter by banner"
-        title="Banner projects"
-        on:click={() => handleBubbleClick2('gaming')}
+        aria-label="Look at websites"
+        title="Websites"
+        on:click={() => (window.location.href = '/projects#websiteSection')}
         class="bubble"
         data-x="170"
         data-y="310"
