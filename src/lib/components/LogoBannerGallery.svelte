@@ -43,28 +43,28 @@
             src: 'imgs/banners/localVineRetail.png',
             alt: 'Local Vine Retail Design',
             title: 'Local Vine Retail Design',
-            tags: ['branding', 'banner', 'combination', 'pictorial']
+            tags: ['branding', 'banner', 'combination', 'pictorial', 'wordmark']
         },
         {
             id: 23,
             src: 'imgs/logos/arkLogo.png',
             alt: 'Ark User Logo',
             title: 'Ark User Logo',
-            tags: ['branding', 'logo', 'combination']
+            tags: ['branding', 'logo', 'combination', 'wordmark']
         },
         {
             id: 22,
             src: 'imgs/logos/atnipLogoRedPrint2.png',
             alt: 'Atnip Construction Redprint Design',
             title: 'Atnip Construction Redprint Design',
-            tags: ['branding', 'logo', 'combination']
+            tags: ['branding', 'logo', 'combination', 'wordmark']
         },
         {
             id: 21,
             src: 'imgs/banners/managerMonopoly_redone_Banner.png',
             alt: 'Manager Monopoly Server Banner',
             title: 'Manager Monopoly Server Banner',
-            tags: ['gaming', 'banner', 'combination', 'emblem']
+            tags: ['gaming', 'banner', 'combination', 'emblem', 'wordmark', 'pictorial']
         },
         {
             id: 20,
@@ -78,21 +78,21 @@
             src: 'imgs/logos/stellapen2.png',
             alt: 'Stellapen Geometric Design',
             title: 'Stellapen Geometric Design',
-            tags: ['other', 'abstract']
+            tags: ['other', 'abstract', 'pictorial']
         },
         {
             id: 18,
             src: 'imgs/logos/dwaaLogo2.png',
             alt: 'DWAA User Logo',
             title: 'DWAA User Logo',
-            tags: ['branding', 'logo', 'combination']
+            tags: ['branding', 'logo', 'combination', 'wordmark', 'pictorial']
         },
         {
             id: 17,
             src: 'imgs/banners/pulsBanner.png',
             alt: 'Puls. Discord Banner',
             title: 'Puls. Discord Banner',
-            tags: ['other', 'banner', 'combination']
+            tags: ['other', 'banner', 'combination', 'wordmark']
         },
         {
             id: 16,
@@ -120,21 +120,21 @@
             src: 'imgs/logos/gxGmail.png',
             alt: 'Gmail Logo Stylized',
             title: 'Gmail Logo Stylized',
-            tags: ['other', 'logo', 'lettermark']
+            tags: ['other', 'logo', 'pictorial']
         },
         {
             id: 12,
             src: 'imgs/banners/bapSauceBanner.png',
             alt: 'Bapplesauce Discord Banner',
             title: 'Bapplesauce Discord Banner',
-            tags: ['gaming', 'banner', 'combination']
+            tags: ['gaming', 'banner', 'combination', 'wordmark']
         },
         {
             id: 11,
             src: 'imgs/banners/poetryXmas_banner2.png',
             alt: 'Art of Poetry Discord Banner',
             title: 'Art of Poetry Discord Banner',
-            tags: ['other', 'banner', 'combination']
+            tags: ['other', 'banner', 'combination', 'wordmark']
         },
         {
             id: 10,
@@ -169,7 +169,7 @@
             src: 'imgs/illustrative/yousif.png',
             alt: 'Yousif User Logo',
             title: 'Yousif User Logo',
-            tags: ['branding', 'logo', 'illustrative', 'pictorial']
+            tags: ['branding', 'logo', 'illustrative']
         },
         {
             id: 5,

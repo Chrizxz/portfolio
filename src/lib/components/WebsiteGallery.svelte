@@ -29,7 +29,7 @@
             title: 'Atnip Construction',
             description: 'Building high-quality homes with superior craftsmanship',
             image: 'imgs/sites/atnipconstruction.com.png',
-            url: 'https://atnip.vercel.app/',
+            url: 'https://atnipconstruction.com/',
             tags: ['business', 'site', 'static'],
             customTags: []
         },
