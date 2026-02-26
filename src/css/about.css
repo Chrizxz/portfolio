@@ -1,5 +1,17 @@
 @import url(colors.css);
 
+.circleTop {
+    position: absolute;
+    width: 90%;
+    height: 10vh;
+    background: var(--favColor);
+    border-radius: 0 0 100% 100%;
+    margin-top: -10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(200px);
+}
+
 .aboutHeadFiller {
     height: 15vh;
     text-align: center;
@@ -234,6 +246,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .circleTop {
+        height: 25vh;
+    }
+
     .logoBg {
         width: 70%;
     }

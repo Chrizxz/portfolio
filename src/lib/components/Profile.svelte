@@ -38,6 +38,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.1s ease;
+    aspect-ratio: 1;
   }
     
   .card-layer {

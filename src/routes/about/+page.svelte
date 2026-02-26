@@ -20,6 +20,8 @@
 
 <svelte:window bind:scrollY={scroll2} />
 
+<div class="circleTop"></div>
+
 <div class="aboutHeadFiller"></div>
 
 <section id="aboutme">
