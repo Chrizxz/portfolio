@@ -79,7 +79,7 @@
     <div class="coralReef"></div>
     <div class="footWrap">
         <div class="bttnWrap footBttnWrap">
-            <a href="/donate" class="bttn footBttn" rel="noopener noreferrer" title="Ko-fi" aria-label="Ko-fi"><i class="fa-solid fa-mug"></i></a>
+            <a href="/donate" class="bttn footBttn" rel="noopener noreferrer" title="Ko-fi" aria-label="Ko-fi"><i class="fa-brands fa-ko-fi"></i></a>
             <a href="/discord" class="bttn footBttn" rel="noopener noreferrer" title="Discord" aria-label="Discord"><i class="fab fa-discord"></i></a>
             <a href="/twitter" class="bttn footBttn" rel="noopener noreferrer" title="Twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
         </div>
