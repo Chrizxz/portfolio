@@ -8,6 +8,7 @@
 		"preview": "vite preview",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint ."
+		"start": "node --env-file=.env build/index.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.3.1",
